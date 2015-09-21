@@ -10,6 +10,7 @@
 - [Chương 7: Database](#ch-ng-7-database)
 - [Chương 8: Machine Learning](#ch-ng-8-machine-learning)
 - [Chương 9: Không gian vector (I)](#ch-ng-9-kh-ng-gian-vector-i)
+- [Chương 10: Không gian vector (II)](#ch-ng-10-kh-ng-gian-vector-ii)
 
 Dịch từ tài liệu [言語処理100本ノック](http://www.cl.ecei.tohoku.ac.jp/nlp100) của lab Inui-Okazaki, đại học Tohoku, Nhật Bản.
 
@@ -485,4 +486,22 @@ Sử dụng đầu ra của bài 83, tạo ma trận word/context *X*. Các thà
 - Nếu *f*(*t*,*c*) >= 10, X_tc = PPMI(t,c) = max{log N\*f(t,c)/f(t,\*) x f(\*,c),0}
 - Nếu f(t,c) < 10, X_tc = 0.
 
-### 85.
+Ở đây PPMI(t,c) là ký hiệu của Pointwise Mutual Information. Chú ý vì kích thước ma trận X là rất lớn, nên lưu tất cả các giá trị của ma trận vào bộ nhớ là không thể. Bạn có thể sử dụng kỹ thuật lưu trữ ma trận thưa với chú ý rằng, phần lớn giá trị của các phần tử trong X bằng 0.
+
+### 85. Sử dụng PCA để giảm số chiều dữ liệu
+Sử dụng thuật toán PCA cho ma trận thu được trong bài tập 84 để giảm số chiều dữ liệu sao cho các word vector thu được có số chiều là 300.
+
+### 86. Hiển thị word vectors
+Đọc vào các word vectors trong bài tập 85, hiển thị vector cho từ "United States". Chú ý là từ "United States" trong corpus đã được biến đổi thành "United_States."
+
+### 87. Tính word similarity
+Sử dụng word vectors thu được trong bài tập 85, tính cosine similarity cho hai từ "United States" và "U.S." Chú ý là từ "U.S." trong corpus được lưu trữ là "U.S"
+
+### 88. Hiển thị top 10 có giá trị similarity cao nhất
+Sử dụng word vectors trong bài 85, hiển thị top 10 từ với cosine similarity cao nhất với từ "England" và các giá trị cosine similarity tương ứng.
+
+### 89. Các thao tác cộng/trừ word vectors
+Đọc vào các word vectors thu được trong bài 85, tính vec("Spain") - vec("Madrid") + vec("Athens") sau đó hiển thị top 10 từ có cosine similarity gần nhất với vector thu được cùng với các giá trị cosine similarity tương ứng.
+
+<a class="mk-toclify" id="ch-ng-10-kh-ng-gian-vector-ii"></a>
+## Chương 10: Không gian vector (II)
