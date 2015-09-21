@@ -482,7 +482,7 @@ Sử dụng đầu ra của bài 82, tính phân bố xuất hiện và các h�
 
 ### 84. Tạo Matrix của các từ và context words
 Sử dụng đầu ra của bài 83, tạo ma trận word/context *X*. Các thành phần X_tc trong ma trận *X* được định nghĩa như sau.
-- Nếu *f*(*t*,*c*) >= 10, X_tc = PPMI(t,c) = max{log N*f(t,c)/f(t,\*)xf(\*,c),0}
+- Nếu $$f(t,c)$$ *f*(*t*,*c*) >= 10, X_tc = PPMI(t,c) = max{log N*f(t,c)/f(t,\*)xf(\*,c),0}
 - Nếu f(t,c) < 10, X_tc = 0.
 
 ### 85.
