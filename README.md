@@ -505,3 +505,25 @@ Sử dụng word vectors trong bài 85, hiển thị top 10 từ với cosine si
 
 <a class="mk-toclify" id="ch-ng-10-kh-ng-gian-vector-ii"></a>
 ## Chương 10: Không gian vector (II)
+Trong chương 10, chúng ta sẽ tiếp tục nội dung của chương 9 về không gian vector.
+
+### 90. Sử dụng word2vec để học word vectors
+Áp dụng [word2vec](https://code.google.com/p/word2vec/) trên corpus đã tạo ra ở bài 81 để học word vectors. Sau đó, sử dụng các word vectors đã học với word2vec để áp dụng cho các bài tập 86-89.
+
+### 91. Chuẩn bị dữ liệu analogy
+Download dữ liệu [analogy evaluation](https://word2vec.googlecode.com/svn/trunk/questions-words.txt). Trong dữ liệu, các dòng bắt đầu bằng ":" thể hiện tên của section. Ví dụ dòng ": capital-common-countries" bắt đầu cho section "capital-common-countries." Hãy trích xuất các dòng của section "family" trong file đã download và lưu ra file.
+
+### 92. Vận dụng dữ liệu analogy data
+Với các dòng trong dữ liệu analogy tạo ra trong bài 91, tính vector sau: vec(word ở cột 2) - vec(word ở cột 1) + vec(word ở cột 3) sau đó tìm word với word vector với độ tương tự cao nhất với word vector đã tính đồng thời tính độ tương tự (cosine similarity). Thêm vào cuối của các dòng từ tìm được và độ tương tự. Trong bài tập này, hãy thử sử dụng word vector đã học được sau bài 85 và bài 90.
+
+### 93. Tính độ chính xác của mô hình trên dữ liệu analogy
+Sử dụng dữ liệu của bài 92, tính độ chính xác của các mô hình với mô hình analogy.
+
+### 94. Tính word similarity trên dữ liệu WordSimilarity-353
+Sử dụng đầu vào là dữ liệu [The WordSimilarity-353 Test Collection](http://www.cs.technion.ac.il/~gabr/resources/data/wordsim353/), tính độ tương tự của các từ ở cột 1 và cột 2 và thêm vào cuối các dòng giá trị độ tương tự này. Hãy áp dụng các mô hình word vectors đã học ở bài 85 và bài 90.
+
+### 95. Đánh giá trên dữ liệu WordSimilarity-353
+Sử dụng dữ liệu trong bài 94, sử dụng ranking với các giá trị độ tương tự đã tính với các mô hình và ranking do con người đưa ra để tính [Spearman correlation](https://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient).
+
+### 96. Trích xuất vectors liên quan đến tên nước
+Sử dụng mô hình đã học với word2vec, trích xuất các vectors liên quan đến tên các nước.
