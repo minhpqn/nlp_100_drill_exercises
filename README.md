@@ -540,4 +540,9 @@ Với các word vectors thu được từ bài tập 96, visualize không gian v
 
 <a class="mk-toclify" id="ph-l-c-corpus-data-s-d-ng-trong-100-b-i-luy-n-t-p-nlp"></a>
 ## Phụ lục: Corpus, data sử dụng trong 100 bài luyện tập NLP
-- hightemp.txt
+- [hightemp.txt](http://www.cl.ecei.tohoku.ac.jp/nlp100/data/hightemp.txt): Dữ liệu nhiệt độ cao nhất ở các địa phương qua các thời kỳ do nha khí tượng Nhật Bản cung cấp.
+- [jawiki-country.json.gz](http://www.cl.ecei.tohoku.ac.jp/nlp100/data/jawiki-country.json.gz): Dữ liệu Wikipedia tiếng Nhật gồm các bài báo (trong ngày 18/10/2014) về các quốc gia, được trích xuất từ [Wikipedia Dump data (tiếng Nhật)](http://dumps.wikimedia.org/jawiki/latest/jawiki-latest-pages-articles.xml.bz2). Dữ liệu được lưu trữ bằng định dạng JSON.
+- [neko.txt](http://www.cl.ecei.tohoku.ac.jp/nlp100/data/neko.txt): là nội dung bằng plain text của cuốn tiểu thuyết "吾輩は猫である" của nhà văn 夏目漱石 (Soseki Natsume) được cung cấp miễn phí tại trang Web: [青空文庫](http://www.aozora.gr.jp/).
+- [nlp.txt](http://www.cl.ecei.tohoku.ac.jp/nlp100/data/nlp.txt): nội dung của trang Wikipedia nói về [Natural Language Processing](https://en.wikipedia.org/wiki/Natural_language_processing) với định dạng 1 dòng 1 câu.
+- [artist.json.gz](http://www.cl.ecei.tohoku.ac.jp/nlp100/data/artist.json.gz): là file nén lưu trữ thông tin về các artist trong cơ sở dữ liệu mở [MusicBrainz](https://musicbrainz.org/). Các thông tin về các artist được lưu trữ ở định dạng JSON, mỗi dòng lưu thông tin về một artist.
+- [enwiki-20150112-400-r10-105752.txt.bz2](http://www.cl.ecei.tohoku.ac.jp/nlp100/data/enwiki-20150112-400-r10-105752.txt.bz2) là file nén dạng bzip2 của 105752 file text được lấy mẫu ngẫu nhiên (tỷ lệ 1/10) từ các bài báo trên Wikipedia có trên 400 từ. Các bài báo trên Wikipedia được lấy vào ngày 12 tháng 1 năm 2015.
