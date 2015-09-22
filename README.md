@@ -11,6 +11,7 @@
 - [Chương 8: Machine Learning](#ch-ng-8-machine-learning)
 - [Chương 9: Không gian vector (I)](#ch-ng-9-kh-ng-gian-vector-i)
 - [Chương 10: Không gian vector (II)](#ch-ng-10-kh-ng-gian-vector-ii)
+- [Phụ lục: Corpus, data sử dụng trong 100 bài luyện tập NLP](#ph-l-c-corpus-data-s-d-ng-trong-100-b-i-luy-n-t-p-nlp)
 
 Dịch từ tài liệu [言語処理100本ノック](http://www.cl.ecei.tohoku.ac.jp/nlp100) của lab Inui-Okazaki, đại học Tohoku, Nhật Bản.
 
@@ -526,4 +527,17 @@ Sử dụng đầu vào là dữ liệu [The WordSimilarity-353 Test Collection]
 Sử dụng dữ liệu trong bài 94, sử dụng ranking với các giá trị độ tương tự đã tính với các mô hình và ranking do con người đưa ra để tính [Spearman correlation](https://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient).
 
 ### 96. Trích xuất vectors liên quan đến tên nước
-Sử dụng mô hình đã học với word2vec, trích xuất các vectors liên quan đến tên các nước.
+Sử dụng mô hình đã học với word2vec, trích xuất các vectors của các từ liên quan đến tên các nước.
+
+### 97. k-means clustering
+Lấy đầu vào là các word vectors từ bài tập 96, thực hiện clustering bằng thuật toán k-means với số lượng clusters *k* = 5.
+
+### 98. Clustering với phương pháp Ward
+Lấy đầu vào là các word vectors từ bài tập 96 (các word vectors của tên các nước), thực hiện hierarchical clustering bằng [phương pháp Ward](https://en.wikipedia.org/wiki/Ward's_method). Sau đó, visualize kết quả clustering bằng [dendrogram](https://en.wikipedia.org/wiki/Dendrogram).
+
+### 99. Visualize word vectors bằng phương pháp t-SNE
+Với các word vectors thu được từ bài tập 96, visualize không gian vectors bằng [phương pháp t-SNE](http://www.jmlr.org/papers/v9/vandermaaten08a.html).
+
+<a class="mk-toclify" id="ph-l-c-corpus-data-s-d-ng-trong-100-b-i-luy-n-t-p-nlp"></a>
+## Phụ lục: Corpus, data sử dụng trong 100 bài luyện tập NLP
+- hightemp.txt
