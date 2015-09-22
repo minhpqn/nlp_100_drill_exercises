@@ -1,21 +1,27 @@
 <a class="mk-toclify" id="table-of-contents"></a>
 
 # Table of Contents
-- [Chương 1: Bài tập khởi động](#ch-ng-1-b-i-t-p-kh-i-ng)
-- [Chương 2: Các lệnh cơ bản trên môi trường Unix](#ch-ng-2-c-c-l-nh-c-b-n-tr-n-m-i-tr-ng-unix)
-- [Chương 3: Biểu thức chính quy (regular expressions)](#ch-ng-3-bi-u-th-c-ch-nh-quy-regular-expressions)
-- [Chương 4: Morphological Analysis trong tiếng Nhật (形態素解析)](#ch-ng-4-morphological-analysis-trong-ti-ng-nh-t)
-- [Chương 5: Dependency parsing (係り受け解析)](#ch-ng-5-dependency-parsing)
-- [Chương 6: Xử lý văn bản tiếng Anh](#ch-ng-6-x-l-v-n-b-n-ti-ng-anh)
-- [Chương 7: Database](#ch-ng-7-database)
-- [Chương 8: Machine Learning](#ch-ng-8-machine-learning)
-- [Chương 9: Không gian vector (I)](#ch-ng-9-kh-ng-gian-vector-i)
-- [Chương 10: Không gian vector (II)](#ch-ng-10-kh-ng-gian-vector-ii)
-- [Phụ lục: Corpus, data sử dụng trong 100 bài luyện tập NLP](#ph-l-c-corpus-data-s-d-ng-trong-100-b-i-luy-n-t-p-nlp)
+- [100 bài luyện tập NLP](#100-b-i-luy-n-t-p-nlp)
+    - [Chương 1: Bài tập khởi động](#ch-ng-1-b-i-t-p-kh-i-ng)
+    - [Chương 2: Các lệnh cơ bản trên môi trường Unix](#ch-ng-2-c-c-l-nh-c-b-n-tr-n-m-i-tr-ng-unix)
+    - [Chương 3: Biểu thức chính quy (regular expressions)](#ch-ng-3-bi-u-th-c-ch-nh-quy-regular-expressions)
+    - [Chương 4: Morphological Analysis trong tiếng Nhật (形態素解析)](#ch-ng-4-morphological-analysis-trong-ti-ng-nh-t)
+    - [Chương 5: Dependency parsing (係り受け解析)](#ch-ng-5-dependency-parsing)
+    - [Chương 6: Xử lý văn bản tiếng Anh](#ch-ng-6-x-l-v-n-b-n-ti-ng-anh)
+    - [Chương 7: Database](#ch-ng-7-database)
+    - [Chương 8: Machine Learning](#ch-ng-8-machine-learning)
+    - [Chương 9: Không gian vector (I)](#ch-ng-9-kh-ng-gian-vector-i)
+    - [Chương 10: Không gian vector (II)](#ch-ng-10-kh-ng-gian-vector-ii)
+    - [Phụ lục: Corpus, data sử dụng trong 100 bài luyện tập NLP](#ph-l-c-corpus-data-s-d-ng-trong-100-b-i-luy-n-t-p-nlp)
+
+<a class="mk-toclify" id="100-b-i-luy-n-t-p-nlp"></a>
+# 100 bài luyện tập NLP
 
 Dịch từ tài liệu [言語処理100本ノック](http://www.cl.ecei.tohoku.ac.jp/nlp100) của lab Inui-Okazaki, đại học Tohoku, Nhật Bản.
 
 Tham khảo thêm phiên bản cũ của tài liệu tại [NLP 100 Drill Exercises](http://www.cl.ecei.tohoku.ac.jp/index.php?NLP%20100%20Drill%20Exercises#x3adf301)
+
+Chú ý: Khi sử dụng tài liệu 
 
 <a class="mk-toclify" id="ch-ng-1-b-i-t-p-kh-i-ng"></a>
 ## Chương 1: Bài tập khởi động
