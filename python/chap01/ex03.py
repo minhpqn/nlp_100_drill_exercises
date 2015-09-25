@@ -3,10 +3,10 @@ from nltk.tokenize import word_tokenize
 import string
 import re
 
-''' 03. Tokenize và thống kê số lượng ký tự của mỗi từ
+""" 03. Tokenize và thống kê số lượng ký tự của mỗi từ
 1) Tokenize câu sau: "Now I need a drink, alcoholic of course, after the heavy lectures involving quantum mechanics."
 2) Đưa ra danh sách gồm số ký tự alphabet trong mỗi từ theo thứ tự xuất hiện của từ đó trong câu.
-'''
+"""
 
 # Return the number of alphabet characters in a string    
 def char_count(w):
