@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-'''
+"""
 00. Đảo ngược xâu ký tự
 Hãy đảo ngược xâu ký tự "stressed" (theo thứ tự từ cuối xâu đến đầu xâu ký tự).
-'''
+"""
 
 def reverse_string(s):
     txt=''
