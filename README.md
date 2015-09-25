@@ -45,7 +45,7 @@ Hãy kết hợp hai xâu ký tự "Partrol" và "Car" để tạo thành xâu m
 ### 04. Ký tự thành phần
 1) Tokenize câu sau: "Hi He Lied Because Boron Could Not Oxidize Fluorine. New Nations Might Also Sign Peace Security Clause. Arthur King Can."
 
-2) Lấy ra ký tự đầu tiên của các từ ở vị trí 1, 5, 6, 7, 8, 9, 15, 16, 19; với các từ còn lại lấy ra ký tự thứ 2. Tạo ra một map từ các ký tự này tới vị trí của từ trong câu.
+2) Lấy ra ký tự đầu tiên của các từ ở vị trí 1, 5, 6, 7, 8, 9, 15, 16, 19; với các từ còn lại lấy ra 2 ký tự đầu tiên. Tạo ra một map từ các xâu ký tự được trích ra tới vị trí của từ trong câu.
 
 ### 05. n-gram
 1) Viết hàm sinh ra tất cả các n-gram từ một dãy cho trước (dãy ký tự hoặc danh sách).
