@@ -1,0 +1,4 @@
+
+# 16. Chia file thành N phần
+# Chia file thành N phần (đơn vị là các hàng trong file). Chương trình nhận đầu vào từ dòng lệnh là số tự nhiên N.
+# Sử dụng lệnh split để thực hiện công việc.

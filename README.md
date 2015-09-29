@@ -105,8 +105,10 @@ Viết chương trình trích xuất ra N hàng cuối cùng của file. Chươn
 Sử dụng lệnh tail trong unix để thực hiện công việc.
 
 ### 16. Chia file thành N phần
-Chia file thành N phần (đơn vị là các hàng trong file). Chương trình nhận đầu vào từ dòng lệnh là số tự nhiên N.
-Sử dụng lệnh split để thực hiện công việc.
+Chia file thành các files nhỏ với N lines mỗi file (đơn vị là các hàng trong file). Chương trình nhận đầu vào từ dòng lệnh là số tự nhiên N.
+Sử dụng lệnh split để thực hiện công việc (split -l N).
+
+Sau đó, cải tiến chương trình để chia thành thành N phần bằng nhau (thay vì N lines mỗi file).
 
 ### 17. Đưa ra các các xâu ký tự duy nhất (unique) trong cột 1
 Đưa ra các xâu ký tự duy nhất trong cột 1 của file.
