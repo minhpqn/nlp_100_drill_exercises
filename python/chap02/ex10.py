@@ -8,6 +8,7 @@
 
 def line_count(filename):
     n = 0
+    # mode U means universal newline mode
     f = open(filename, 'rU')
     for line in f:
         n += 1
