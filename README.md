@@ -119,7 +119,7 @@ Viết chương trình thực hiện nhiệm vụ trên. Dùng lệnh sort để
 
 ### 19. Sắp xếp theo tần suất xuất hiện
 Đưa ra tần suất xuất hiện của các giá trị trong cột 1; sắp xếp các giá trị trong cột 1 theo thứ tự từ cao đến thấp của tần suất xuất hiện.
-Chỉ dụng lệnh cut, uniq, sort để thực hiện nhiệm vụ.
+Chỉ dùng lệnh cut, uniq, sort để thực hiện nhiệm vụ.
 
 <a class="mk-toclify" id="ch-ng-3-bi-u-th-c-ch-nh-quy-regular-expressions"></a>
 ## Chương 3: Biểu thức chính quy (regular expressions)

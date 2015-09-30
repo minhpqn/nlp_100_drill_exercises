@@ -8,7 +8,7 @@
 # Confirm by using the command:
 # % cut -f 1 ../../data/hightemp.txt | sort
 # Note that sorting unicode strings may have different outputs
-# based on OS
+# based on OS (set Set LC_ALL=C before sorting)
 # Solution: http://stackoverflow.com/questions/3412933/python-not-sorting-unicode-properly-strcoll-doesnt-help
 
 # print out sorted unique strings in the column n
