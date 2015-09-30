@@ -115,9 +115,7 @@ Sau đó, cải tiến chương trình để chia file thành thành N phần b�
 Sử dụng lệnh cut, sort, uniq để thực hiện nhiệm vụ.
 
 ### 18. Sắp xếp các hàng theo thứ tự giảm dần của giá trị (numeric value) của cột thứ 3
-Viết chương trình thực hiện nhiệm vụ trên.
-
-Chỉ dùng lệnh sort để xác nhận (trong bài tập này, kết quả của chương trình của bạn với lệnh sort có thể khác nhau do có thể có các giá trị giống nhau trong cột thứ 3).
+Viết chương trình thực hiện nhiệm vụ trên. Dùng lệnh sort để xác nhận (trong bài tập này, kết quả của chương trình của bạn với lệnh sort có thể khác nhau do có thể có các giá trị giống nhau trong cột thứ 3).
 
 ### 19. Sắp xếp theo tần suất xuất hiện
 Đưa ra tần suất xuất hiện của các giá trị trong cột 1; sắp xếp các giá trị trong cột 1 theo thứ tự từ cao đến thấp của tần suất xuất hiện.
@@ -457,7 +455,7 @@ Sử dụng mô hình đã học trong bài 73 để đưa ra dự đoán trên 
 Sử dụng đầu ra của bài 76, tính accuracy cho toàn bộ dữ liệu; precision, recall, F1 cho nhãn +1.
 
 ### 78. 5-fold cross validation
-Vì các thực nghiệm trong bài 76, 77 đánh giá model trên dữ liệu huấn luyện nên khó có thể đó là các đánh giá hợp lý. Các đánh giá chỉ đánh giá khả năng mô hình "fit" với dữ liệu training chứ không đánh giá khả năng khái quát (generalization) của mô hình. Vì thế bài tập 78 yêu cầu bạn đánh giá mô hình sử dụng 5-fold cross validation. Đưa ra accuracy, precision, recall, F1 score cho 5-fold cross validation (tính trung bình của 5 folds).
+Vì các thực nghiệm trong bài 76, 77 đánh giá model trên dữ liệu huấn luyện nên khó có thể nói đó là các đánh giá hợp lý. Các đánh giá này chỉ đánh giá khả năng mô hình "fit" với dữ liệu training chứ không đánh giá khả năng khái quát (generalization) của mô hình. Vì thế bài tập 78 yêu cầu bạn đánh giá mô hình sử dụng 5-fold cross validation. Đưa ra accuracy, precision, recall, F1 score cho 5-fold cross validation (tính trung bình của 5 folds).
 
 ### 79. Vẽ đồ thị precision-recall
 Vẽ đồ thị precision-recall theo sự thay đổi của giá trị threshold trong mô hình logistic regression.

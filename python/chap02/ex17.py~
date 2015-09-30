@@ -1,0 +1,5 @@
+
+
+# 17. Đưa ra các các xâu ký tự duy nhất (unique) trong cột 1
+# Đưa ra các xâu ký tự duy nhất trong cột 1 của file.
+# Sử dụng lệnh cut, sort, uniq để thực hiện nhiệm vụ.
