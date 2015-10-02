@@ -130,7 +130,7 @@ Bài tập trong chương 3 sử dụng file [jawiki-country.json.gz](http://www
 Lập trình để xử lý các việc sau đây.
 
 ### 20. Đọc vào dữ liệu JSON
-Đọc dữ liệu từ file JSON chứa các tài liệu Wikipedia, hiển thị nội dung của tài liệu có liên quan đến "イギリス"(có nghĩa là nước Anh). Sử dụng các nội dung của tài liệu được trích xuất này để thực thi các nhiệm vụ trong các bài tập từ 21-29.
+Đọc dữ liệu từ file JSON chứa các tài liệu Wikipedia, trích xuất & hiển thị nội dung của tài liệu (trường text của JSON object) có liên quan đến "イギリス" (có nghĩa là nước Anh). Sử dụng các nội dung của tài liệu được trích xuất này để thực thi các nhiệm vụ trong các bài tập từ 21-29.
 
 ### 21. Trích xuất các dòng có chứa tên đề mục
 Trong các tài liệu, trích xuất các dòng có chứa tên đề mục (category name hay カテゴリ名).
