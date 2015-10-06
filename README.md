@@ -158,7 +158,7 @@ Xoá các liên kết đến các trang Wikipedia khác từ các templates đư
 Thêm vào xử lý ở bài 27. Xoá các markup trong các templates càng nhiều càng tốt và in ra các thông tin cơ bản về quốc gia.
 
 ### 29. Lấy ra các URL của quốc kỳ
-Sử dụng nội dung của template và lấy ra URl đến quốc kỳ (国旗画像のURL).
+Sử dụng nội dung của các template và lấy ra URl đến quốc kỳ (国旗画像のURL).
 Hint: Gọi API [imageinfo](https://www.mediawiki.org/wiki/API:Properties) của [MediaWWiki](https://www.mediawiki.org/wiki/API:Main_page), biến đổi các file references thành URL.
 
 <a class="mk-toclify" id="ch-ng-4-morphological-analysis-trong-ti-ng-nh-t"></a>
