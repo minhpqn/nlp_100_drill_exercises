@@ -11,9 +11,11 @@ def main():
     for doc in wiki_docs:
         lines = doc['text'].split('\n')
         for line in lines:
-            # TODO: extract exact category name
-            if re.search(ur'Category:.*', line):
-                print line.encode('utf-8')
+            categories = re.findall(ur'\[\[Category:(.+)\]\]', line)
+            for match in categories:
+                for cat in match.split('|'):
+                    if not re.search(ur'[\* ]', cat):
+                        print cat.encode('utf-8')
 
 if __name__ == '__main__':
     main()                

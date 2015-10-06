@@ -145,7 +145,7 @@ Hiển thị tên của các section và level của các section trong các tà
 Trích xuất toàn bộ các liên kết đến các media files trong tài liệu.
 
 ### 25. Trích xuất templates
-Trích xuất vị trí và tên các folder có template "基礎情報" trong tài liệu.
+Trích xuất vị trí và tên các folder có template "基礎情報" trong tài liệu. Lưu kết quả trong các đối tượng dictionary. Tham khảo về templates tại [đây](https://en.wikipedia.org/wiki/Help:Infobox).
 
 ### 26. Loại bỏ các emphasis markups
 Trong khi làm các xử lý ở bài tập 25, xoá các emphasis markup (italic, bold, both) từ vị trí của các templates và biến đổi thành plain text. (Tham khảo về các loại markup tại [Wiki markup](https://en.wikipedia.org/wiki/Help:Cheatsheet), bảng tham khảo bằng tiếng Nhật tại [マークアップ早見表](http://ja.wikipedia.org/wiki/Help:%E6%97%A9%E8%A6%8B%E8%A1%A8)).
