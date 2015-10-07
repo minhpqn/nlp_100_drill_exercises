@@ -1,0 +1,4 @@
+
+# 27. Xoá các link đến các trang Wikipedia khác
+# Nhiệm vụ giống như bài 26 và thêm vào xử lý sau.
+# Xoá các liên kết đến các trang Wikipedia khác từ các templates được trích xuất và biến đổi thành dạng text. (Tham khảo về các loại markup tại [Wiki markup](https://en.wikipedia.org/wiki/Help:Cheatsheet), bảng tham khảo bằng tiếng Nhật tại [マークアップ早見表](http://ja.wikipedia.org/wiki/Help:%E6%97%A9%E8%A6%8B%E8%A1%A8)).
