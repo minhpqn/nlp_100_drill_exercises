@@ -1,4 +1,0 @@
-
-# 29. Lấy ra các URL của quốc kỳ
-# Sử dụng nội dung của các template và lấy ra URl đến quốc kỳ (国旗画像のURL).
-# Hint: Gọi API [imageinfo](https://www.mediawiki.org/wiki/API:Properties) của [MediaWWiki](https://www.mediawiki.org/wiki/API:Main_page), biến đổi các file references thành URL.

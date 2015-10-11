@@ -11,6 +11,8 @@ from ex28 import get_infobox
 # 29. Lấy ra các URL của quốc kỳ
 # Sử dụng nội dung của các template và lấy ra URl đến quốc kỳ (国旗画像のURL).
 # Hint: Gọi API [imageinfo](https://www.mediawiki.org/wiki/API:Properties) của [MediaWWiki](https://www.mediawiki.org/wiki/API:Main_page), biến đổi các file references thành URL.
+# Tham khảo cách lấy nội dung của trang Web
+# HOWTO Fetch Internet Resources Using urllib2: https://docs.python.org/2.7/howto/urllib2.html
 
 def image_url(image_name):
     data = {}
