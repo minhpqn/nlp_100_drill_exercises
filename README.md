@@ -152,14 +152,14 @@ Trong khi làm các xử lý ở bài tập 25, xoá các emphasis markup (itali
 
 ### 27. Xoá các link đến các trang Wikipedia khác
 Nhiệm vụ giống như bài 26 và thêm vào xử lý sau.
-Xoá các liên kết đến các trang Wikipedia khác từ các templates được trích xuất và biến đổi thành dạng text. (Tham khảo về các loại markup tại [Wiki markup](https://en.wikipedia.org/wiki/Help:Cheatsheet), bảng tham khảo bằng tiếng Nhật tại [マークアップ早見表](http://ja.wikipedia.org/wiki/Help:%E6%97%A9%E8%A6%8B%E8%A1%A8)).
+Xoá các markups của liên kết đến các trang Wikipedia khác từ các templates được trích xuất và biến đổi thành dạng text. (Tham khảo về các loại markup tại [Wiki markup](https://en.wikipedia.org/wiki/Help:Cheatsheet), bảng tham khảo bằng tiếng Nhật tại [マークアップ早見表](http://ja.wikipedia.org/wiki/Help:%E6%97%A9%E8%A6%8B%E8%A1%A8)).
 
 ### 28. Xoá các markup trong văn bản
 Thêm vào xử lý ở bài 27. Xoá các markup trong các templates càng nhiều càng tốt và in ra các thông tin cơ bản về quốc gia.
 
 ### 29. Lấy ra các URL của quốc kỳ
 Sử dụng nội dung của các template và lấy ra URl đến quốc kỳ (国旗画像のURL).
-Hint: Gọi API [imageinfo](https://www.mediawiki.org/wiki/API:Properties) của [MediaWWiki](https://www.mediawiki.org/wiki/API:Main_page), biến đổi các file references thành URL.
+Hint: Gọi API [imageinfo](https://www.mediawiki.org/wiki/API:Imageinfo) của [MediaWWiki](https://www.mediawiki.org/wiki/API:Main_page), biến đổi các file references thành URL.
 
 <a class="mk-toclify" id="ch-ng-4-morphological-analysis-trong-ti-ng-nh-t"></a>
 ## Chương 4: Morphological Analysis trong tiếng Nhật (形態素解析)

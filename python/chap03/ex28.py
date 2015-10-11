@@ -5,9 +5,8 @@ import sys
 import re
 from ex20 import extract_wikidocs
 
-# 27. Xoá các link đến các trang Wikipedia khác
-# Nhiệm vụ giống như bài 26 và thêm vào xử lý sau.
-# Xoá các liên kết đến các trang Wikipedia khác từ các templates được trích xuất và biến đổi thành dạng text. (Tham khảo về các loại markup tại [Wiki markup](https://en.wikipedia.org/wiki/Help:Cheatsheet), bảng tham khảo bằng tiếng Nhật tại [マークアップ早見表](http://ja.wikipedia.org/wiki/Help:%E6%97%A9%E8%A6%8B%E8%A1%A8)).
+# 28. Xoá các markup trong văn bản
+# Thêm vào xử lý ở bài 27. Xoá các markup trong các templates càng nhiều càng tốt và in ra các thông tin cơ bản về quốc gia.
 
 # Return a dictionary object from given an info box in the format
 # {{基礎情報 国
@@ -18,11 +17,7 @@ from ex20 import extract_wikidocs
 # }}
 # Change
 # -------------------------
-# 2015/10/07      remove links to other Wikipedia articles
-# Examples of 内部リンク:
-# [[記事名]]
-# [[記事名|表示文字]]
-# [[記事名#節名|表示文字]]
+# 2015/10/09      remove markups as many as possible
 def parse_infobox(template):
     box = {}
     lines = template.split('\n')
@@ -49,7 +44,7 @@ def parse_infobox(template):
                 val = fields.pop()
             box[key] = val
             
-    return box        
+    return box
 
 def get_infobox():
     docs = extract_wikidocs()
@@ -65,6 +60,7 @@ def get_infobox():
 
 def main():
     infobox_list = get_infobox()
+    print 'Number of infoboxes: %s' % len(infobox_list)
     for obj in infobox_list:
         for k in sorted(obj.keys()):
             print '%s: %s' % (k.encode('utf-8'), obj[k].encode('utf-8'))
