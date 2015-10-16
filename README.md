@@ -425,8 +425,8 @@ Chương này yêu cầu bạn thực hiện bài toán sentiment analysis trên
 ### 70. Download và tiền xử lý dữ liệu
 Sử dụng dữ liệu liên quan đến sentiment polarity của các câu (download tại [đây](http://www.cs.cornell.edu/people/pabo/movie-review-data/rt-polaritydata.tar.gz)), tạo dữ liệu chuẩn hoá (sentiment.txt) theo hướng dẫn dưới đây.
 
-1. Thêm vào các dòng bắt đầu bằng '+1' trong file rt-polarity.pos (+1 là polarity của câu và theo sau là nội dung của câu với polarity đó).
-2. Thêm vào các dòng bắt đầu bằng '-1' trong file rt-polarity.neg (-1 là polarity của câu và theo sau là nội dung của câu với polarity đó).
+1. Thêm vào '+1' ở bắt đầu các dòng trong file rt-polarity.pos (giữa +1 và nội dung của câu cách nhau bởi ký tự trắng).
+2. Thêm vào '-1' ở bắt đầu các dòng trong file rt-polarity.neg (giữa -1 và nội dung của câu cách nhau bởi ký tự trắng).
 3. Kết hợp nội dung thu được trong phần 1 và 2 để tạo thành file sentiment.txt
 
 Sau khi đã thu được file sentiment.txt, xác nhận số lượng các câu với positive polarity và các câu với negative polarity.
