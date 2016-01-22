@@ -167,7 +167,7 @@ Download file [neko.txt](http://www.cl.ecei.tohoku.ac.jp/nlp100/data/neko.txt) l
 
 Sử dụng package [MeCab](http://taku910.github.io/mecab/) để thực hiện "morphological analysis" (Tham khảo trang tiếng Nhật tại [đây](https://ja.wikipedia.org/wiki/%E5%BD%A2%E6%85%8B%E7%B4%A0%E8%A7%A3%E6%9E%90)). Lưu kết quả vào file neko.txt.mecab. Sử dụng file kết quả để thực hiện các công việc ở các bài tập dưới đây.
 
-Chú ý: Trong các bài tập 37, 38, 29 có thể sử dụng các phần mềm [matplitlib](http://matplotlib.org/) hoặc [Gnuplot](http://www.gnuplot.info/).
+Chú ý: Trong các bài tập 37, 38, 39 có thể sử dụng các phần mềm [matplitlib](http://matplotlib.org/) hoặc [Gnuplot](http://www.gnuplot.info/).
 
 @All: Với các bạn không quen xử lý text tiếng Nhật, có thể dùng một file text tiếng Anh và thực hiện POS tagging, sau đó làm các bài tập dưới đây.
 
@@ -186,7 +186,7 @@ Trích xuất tất cả dạng nguyên thể của động từ (base form).
 Trích xuất toàn bộ các danh từ dạng サ (サ変名詞). Tham khảo trang Wikipedia tiếng Nhật về [サ行変格活用](https://ja.wikipedia.org/wiki/%E3%82%B5%E8%A1%8C%E5%A4%89%E6%A0%BC%E6%B4%BB%E7%94%A8).
 
 ### 34. 「AのB」
-Trích xuất tất cả các danh từ ghép (compound nouns) kết nối bằng の.
+Trích xuất tất cả các danh từ ghép (compound nouns) gồm 2 danh từ kết nối bằng の.
 
 ### 35. Trích xuất các kết nối danh từ (noun connections hay 名詞の連接)
 Trích xuất tất cả các noun connections (các danh từ đứng cạnh nhau liên tiếp). Khi trích xuất, chú ý trích xuất chuỗi danh từ matching dài nhất có thể. Ví dụ ABC trong đó A, B, C là danh từ thì phải trích xuất ABC thay vì AB.
@@ -343,7 +343,7 @@ Trích xuất tất cả các named entities trong văn bản đầu vào.
 Dựa trên kết quả phân tích coreference của Stanford Core NLP, thay thế các mention bằng representative mention. Chú ý khi thay thế các mention bằng representative mention, lưu lại các mention gốc trong dấu ngoặc theo định dạng representative mention (mention).
 
 ### 57. Phân tích cấu trúc dependency
-Từ kết quả phân tích dependency của Stanford Core NLP, visualize câu đầu vào bằng đồ thị có hướng. Khi visualize các dependency trees, có thể sử dụng [ngôn ngữ DOT](https://en.wikipedia.org/wiki/DOT_%28graph_description_language%29), hay sử dụng [Graphviz](http://www.graphviz.org/). Nếu sử dụng Python, có thể hiển thị đồ thị có hướng bằng thư viện/package [pydot](https://code.google.com/p/pydot/).
+Từ kết quả phân tích dependency của Stanford Core NLP (collapsed-dependencies), visualize câu đầu vào bằng đồ thị có hướng. Khi visualize các dependency trees, có thể sử dụng [ngôn ngữ DOT](https://en.wikipedia.org/wiki/DOT_%28graph_description_language%29), hay sử dụng [Graphviz](http://www.graphviz.org/). Nếu sử dụng Python, có thể hiển thị đồ thị có hướng bằng thư viện/package [pydot](https://code.google.com/p/pydot/).
 
 ### 58. Trích xuất tuples
 Từ kết quả phân tích dependency của Stanford Core NLP (collapsed-dependencies), trích xuất các bộ 3 [Subject, Predicate, Purpose] và in ra các bộ 3 này (các thành phần cách nhau bởi ký tự tab). Subject, Predicate, Purpose được xác định dựa vào các tiêu chuẩn sau:
