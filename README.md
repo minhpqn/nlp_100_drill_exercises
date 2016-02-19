@@ -491,9 +491,7 @@ trong văn bản.
 
 Tiếp theo bài 40, cài đặt lớp Chunk để lưu trữ các chunk (hay bunsetsu (文節)).
 Lớp này có các biến thành phần là: - morphs (để lưu trữ danh sách các Morph
-objects) - dst để lưu trữ index của chunk mà chunk hiện tại trỏ đến (chunk đích
-- destination) - srcs để lưu trữ danh sách các indexes của các chunk trỏ đến
-chunk hiện tại.
+objects) - dst để lưu trữ index của chunk mà chunk hiện tại trỏ đến (chunk đích - destination) - srcs để lưu trữ danh sách các indexes của các chunk trỏ đến chunk hiện tại.
 
 Sau đó, đọc vào kết quả dependency parsing. Mỗi câu sẽ bao gồm danh sách của các
 Chunk objects. Hiển thị xâu ký tự và giá trị của biến dst của các chunk trong
