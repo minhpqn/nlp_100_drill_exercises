@@ -54,7 +54,6 @@ def load_data(data_file):
 	n_samples  = 0
 	n_features = 0
 	f = codecs.open(data_file, 'rU')
-	prev_line = ''
 	for line in f:
 		line = line.rstrip()
 		if line == '': continue
