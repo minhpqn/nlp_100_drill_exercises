@@ -116,22 +116,20 @@
 100 bài luyện tập xử lý ngôn ngữ tự nhiên
 =========================================
 
-Dịch từ tài liệu [言語処理100本ノック](<http://www.cl.ecei.tohoku.ac.jp/nlp100>)
-của lab Inui-Okazaki, đại học Tohoku, Nhật Bản. Người dịch: Phạm Quang Nhật Minh
+Dịch từ tài liệu [言語処理100本ノック](<http://www.cl.ecei.tohoku.ac.jp/nlp100>) của lab Inui-Okazaki, đại học Tohoku, Nhật Bản. Người dịch: Phạm Quang Nhật Minh
 (minhpqn).
 
 Tham khảo thêm phiên bản cũ của tài liệu tại [NLP 100 Drill
 Exercises](<http://www.cl.ecei.tohoku.ac.jp/index.php?NLP%20100%20Drill%20Exercises#x3adf301>)
 
-Chú ý: Khi sử dụng tài liệu 100 bài luyện tập xử lý ngôn ngữ tự nhiên, cần trích
-dẫn các nguồn sau: - Tài liệu "言語処理100本ノック" của lab Inui-Okazaki, đại
-học Tohoku, Nhật Bản. URL: <http://www.cl.ecei.tohoku.ac.jp/nlp100> - Đường link
-tới bản dịch hiện tại: <https://github.com/minhpqn/nlp_100_drill_exercises>.
-Người dịch: Phạm Quang Nhật Minh.
+Chú ý: Khi sử dụng tài liệu 100 bài luyện tập xử lý ngôn ngữ tự nhiên, cần trích dẫn các nguồn sau: 
+
+- Tài liệu "言語処理100本ノック" của lab Inui-Okazaki, đại
+học Tohoku, Nhật Bản. URL: <http://www.cl.ecei.tohoku.ac.jp/nlp100> 
+- Đường link tới bản dịch hiện tại: <https://github.com/minhpqn/nlp_100_drill_exercises>. Người dịch: Phạm Quang Nhật Minh.
 
 <a class="mk-toclify" id="ch-ng-1-b-i-t-p-kh-i-ng"></a>
 ## Chương 1: Bài tập khởi động
----------------------------
 
 <a class="mk-toclify" id="00-o-ng-c-x-u-k-t"></a>
 ### 00. Đảo ngược xâu ký tự
@@ -216,7 +214,6 @@ viết để đưa ra kết quả.
 
 <a class="mk-toclify" id="ch-ng-2-c-c-l-nh-c-b-n-tr-n-m-i-tr-ng-unix"></a>
 ## Chương 2: Các lệnh cơ bản trên môi trường Unix
-----------------------------------------------
 
 Các bài tập trong chương này sử dụng dữ liệu trong file
 [hightemp.txt](<http://www.cl.ecei.tohoku.ac.jp/nlp100/data/hightemp.txt>). File
@@ -297,7 +294,6 @@ uniq, sort để thực hiện nhiệm vụ.
 
 <a class="mk-toclify" id="ch-ng-3-bi-u-th-c-ch-nh-quy-regular-expressions"></a>
 ## Chương 3: Biểu thức chính quy (regular expressions)
----------------------------------------------------
 
 Bài tập trong chương 3 sử dụng file
 [jawiki-country.json.gz](<http://www.cl.ecei.tohoku.ac.jp/nlp100/data/jawiki-country.json.gz>).
@@ -382,7 +378,6 @@ references thành URL.
 
 <a class="mk-toclify" id="ch-ng-4-morphological-analysis-trong-ti-ng-nh-t"></a>
 ## Chương 4: Morphological Analysis trong tiếng Nhật (形態素解析)
---------------------------------------------------------------
 
 Download file [neko.txt](<http://www.cl.ecei.tohoku.ac.jp/nlp100/data/neko.txt>)
 là nội dung bằng plain text của cuốn tiểu thuyết "吾輩は猫である" của nhà văn
@@ -468,7 +463,6 @@ thấp), trục dọc là tần suất xuất hiện của các từ.
 
 <a class="mk-toclify" id="ch-ng-5-dependency-parsing"></a>
 ## Chương 5: Dependency parsing (係り受け解析)
--------------------------------------------
 
 Thực hiện phân tích cấu trúc ngữ pháp (dependency parsing) bằng công cụ
 [CaboCha](<http://taku910.github.io/cabocha/>) cho file
@@ -670,7 +664,6 @@ Xという -\> Y
 
 <a class="mk-toclify" id="ch-ng-6-x-l-v-n-b-n-ti-ng-anh"></a>
 ## Chương 6: Xử lý văn bản tiếng Anh
----------------------------------
 
 Cài đặt các chương trình xử lý văn bản tiếng Anh
 ([nlp.txt](<http://www.cl.ecei.tohoku.ac.jp/nlp100/data/nlp.txt>)).
@@ -758,7 +751,6 @@ noun phrases khác (nested NP).
 
 <a class="mk-toclify" id="ch-ng-7-database"></a>
 ## Chương 7: Database
-------------------
 
 File
 [artist.json.gz](<http://www.cl.ecei.tohoku.ac.jp/nlp100/data/artist.json.gz>)
@@ -868,7 +860,6 @@ thứ tự từ cao tới thấp của lượng rating.
 
 <a class="mk-toclify" id="ch-ng-8-machine-learning"></a>
 ## Chương 8: Machine Learning
---------------------------
 
 Chương này yêu cầu bạn thực hiện bài toán sentiment analysis trên corpus
 [sentence polarity dataset
@@ -964,7 +955,6 @@ logistic regression.
 
 <a class="mk-toclify" id="ch-ng-9-kh-ng-gian-vector-i"></a>
 ## Chương 9: Không gian vector (I)
--------------------------------
 
 File
 [enwiki-20150112-400-r10-105752.txt.bz2](<http://www.cl.ecei.tohoku.ac.jp/nlp100/data/enwiki-20150112-400-r10-105752.txt.bz2>)
@@ -1076,7 +1066,6 @@ nhất với vector thu được cùng với các giá trị cosine similarity t
 
 <a class="mk-toclify" id="ch-ng-10-kh-ng-gian-vector-ii"></a>
 ## Chương 10: Không gian vector (II)
----------------------------------
 
 Trong chương 10, chúng ta sẽ tiếp tục nội dung của chương 9 về không gian
 vector.
@@ -1156,7 +1145,6 @@ Với các word vectors thu được từ bài tập 96, visualize không gian v
 
 <a class="mk-toclify" id="ph-l-c-corpus-data-s-d-ng-trong-100-b-i-luy-n-t-p-nlp"></a>
 ## Phụ lục: Corpus, data sử dụng trong 100 bài luyện tập NLP
----------------------------------------------------------
 
 -   [hightemp.txt](<http://www.cl.ecei.tohoku.ac.jp/nlp100/data/hightemp.txt>):
 Dữ liệu nhiệt độ cao nhất ở các địa phương qua các thời kỳ do nha khí tượng
