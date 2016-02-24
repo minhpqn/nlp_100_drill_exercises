@@ -1007,9 +1007,12 @@ sẽ trở thành "Isle\_of\_Man."
 Sử dụng corpus được tạo ra trong bài tập 81, trích xuất context của tất cả các
 từ xuất hiện trong corpus. Context của mỗi từ *t* trong dữ liệu sẽ cặp với từ
 *t* và xuất ra theo định dạng: các thông tin cách nhau bởi ký tự tab. Context
-của mỗi từ *t* được định nghĩa như sau: - Trích xuất các từ ở trước và sau của
+của mỗi từ *t* được định nghĩa như sau: 
+
+- Trích xuất các từ ở trước và sau của
 *t* với kích thước cửa sổ là *d* (chú ý context words của *t* sẽ không bao gồm
-bản thân của từ *t*) - Với mỗi từ *t*, kích thước của context (window size) *d*
+bản thân của từ *t*) 
+- Với mỗi từ *t*, kích thước của context (window size) *d*
 sẽ được chọn ngẫu nhiên trong tập {1, 2, 3, 4, 5}.
 
 <a class="mk-toclify" id="83-t-nh-t-n-xu-t-xu-t-hi-n-c-a-t-context"></a>
@@ -1017,7 +1020,9 @@ sẽ được chọn ngẫu nhiên trong tập {1, 2, 3, 4, 5}.
 
 Sử dụng đầu ra của bài 82, tính phân bố xuất hiện và các hằng số sau: 
 
-- *f*(*t*,*c*): là số lần đồng xuất hiện của từ *t* và context word *c*. - *f*(*t*,\*): số lần xuất hiện của từ *t*. - *f*(\*,*c*): số lần xuất hiện của context word *c*.
+- *f*(*t*,*c*): là số lần đồng xuất hiện của từ *t* và context word *c*.
+- *f*(*t*,\*): số lần xuất hiện của từ *t*.
+- *f*(\*,*c*): số lần xuất hiện của context word *c*.
 - *N*: Tổng số lần xuất hiện của từ và các context word (hằng số).
 
 <a class="mk-toclify" id="84-t-o-matrix-c-a-c-c-t-v-context-words"></a>
