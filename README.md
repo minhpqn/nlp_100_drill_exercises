@@ -977,8 +977,10 @@ liệu trong file
 Sử dụng khoảng trắng là ký tự ngăn cách để tokenize các từ trong các câu. Phương
 pháp này có nhược điểm là các từ thu được sẽ còn các ký tự đặc biệt như dấu câu,
 hoặc dấu ngoặc. Vì thế sau khi tokenize các từ trong corpus, tiến hành các xử lý
-sau đây. - Xoá các ký tự đặc biệt xuất hiện ở đầu và cuối các từ: .,!?;:()[]'" -
-Xoá các từ chỉ gồm ký tự trắng
+sau đây. 
+
+- Xoá các ký tự đặc biệt xuất hiện ở đầu và cuối các từ: .,!?;:()[]'" 
+- Xoá các từ chỉ gồm ký tự trắng
 
 Sau khi tiền xử lý dữ liệu, lưu file dữ liệu gồm danh sách các từ cách nhau bởi
 khoảng trắng.
@@ -1013,9 +1015,9 @@ sẽ được chọn ngẫu nhiên trong tập {1, 2, 3, 4, 5}.
 <a class="mk-toclify" id="83-t-nh-t-n-xu-t-xu-t-hi-n-c-a-t-context"></a>
 ### 83. Tính tần xuất xuất hiện của từ/context
 
-Sử dụng đầu ra của bài 82, tính phân bố xuất hiện và các hằng số sau: - *f*(*t*,
-*c*): là số lần đồng xuất hiện của từ *t* và context word *c*. - *f*(*t*,\*): số
-lần xuất hiện của từ *t*. - *f*(\*,*c*): số lần xuất hiện của context word *c*.
+Sử dụng đầu ra của bài 82, tính phân bố xuất hiện và các hằng số sau: 
+
+- *f*(*t*,*c*): là số lần đồng xuất hiện của từ *t* và context word *c*. - *f*(*t*,\*): số lần xuất hiện của từ *t*. - *f*(\*,*c*): số lần xuất hiện của context word *c*.
 - *N*: Tổng số lần xuất hiện của từ và các context word (hằng số).
 
 <a class="mk-toclify" id="84-t-o-matrix-c-a-c-c-t-v-context-words"></a>
