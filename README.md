@@ -1,7 +1,6 @@
 <a class="mk-toclify" id="table-of-contents"></a>
 
 # Table of Contents
-- [Chương 1: Bài tập khởi động](#ch-ng-1-b-i-t-p-kh-i-ng)
     - [00. Đảo ngược xâu ký tự](#00-o-ng-c-x-u-k-t)
     - [01. Trích xuất ký tự từ xâu ký tự](#01-tr-ch-xu-t-k-t-t-x-u-k-t)
     - [02. Kết hợp hai xâu ký tự](#02-k-t-h-p-hai-x-u-k-t)
@@ -12,7 +11,6 @@
     - [07. Sinh ra câu từ template](#07-sinh-ra-c-u-t-template)
     - [08. Xâu mật mã](#08-x-u-m-t-m)
     - [09. [Typoglycemia](<https://en.wikipedia.org/wiki/Typoglycemia>)](#09-typoglycemia-https-enwikipediaorgwikitypoglycemia)
-- [Chương 2: Các lệnh cơ bản trên môi trường Unix](#ch-ng-2-c-c-l-nh-c-b-n-tr-n-m-i-tr-ng-unix)
     - [10. Đếm số dòng trong file](#10-m-s-d-ng-trong-file)
     - [11. Biến đổi các ký tự tab thành space](#11-bi-n-i-c-c-k-t-tab-th-nh-space)
     - [12. Lưu cột 1 vào file col1.txt, cột 2 vào file col2.txt](#12-l-u-c-t-1-v-o-file-col1txt-c-t-2-v-o-file-col2txt)
@@ -23,7 +21,6 @@
     - [17. Đưa ra các các xâu ký tự duy nhất (unique) trong cột 1](#17-a-ra-c-c-c-c-x-u-k-t-duy-nh-t-unique-trong-c-t-1)
     - [18. Sắp xếp các hàng theo thứ tự giảm dần của giá trị (numeric value) của cột thứ 3](#18-s-p-x-p-c-c-h-ng-theo-th-t-gi-m-d-n-c-a-gi-tr-numeric-value-c-a-c-t-th-3)
     - [19. Sắp xếp theo tần suất xuất hiện](#19-s-p-x-p-theo-t-n-su-t-xu-t-hi-n)
-- [Chương 3: Biểu thức chính quy (regular expressions)](#ch-ng-3-bi-u-th-c-ch-nh-quy-regular-expressions)
     - [20. Đọc vào dữ liệu JSON](#20-c-v-o-d-li-u-json)
     - [21. Trích xuất các dòng có chứa tên đề mục](#21-tr-ch-xu-t-c-c-d-ng-c-ch-a-t-n-m-c)
     - [22. Trích xuất các tên đề mục (Category name)](#22-tr-ch-xu-t-c-c-t-n-m-c-category-name)
@@ -34,7 +31,6 @@
     - [27. Xoá các link đến các trang Wikipedia khác](#27-xo-c-c-link-n-c-c-trang-wikipedia-kh-c)
     - [28. Xoá các markup trong văn bản](#28-xo-c-c-markup-trong-v-n-b-n)
     - [29. Lấy ra các URL của quốc kỳ](#29-l-y-ra-c-c-url-c-a-qu-c-k)
-- [Chương 4: Morphological Analysis trong tiếng Nhật (形態素解析)](#ch-ng-4-morphological-analysis-trong-ti-ng-nh-t)
     - [30. Đọc vào kết quả morphological analysis](#30-c-v-o-k-t-qu-morphological-analysis)
     - [31. Động từ](#31-ng-t)
     - [32. Dạng nguyên thể của động từ (動詞の原形)](#32-d-ng-nguy-n-th-c-a-ng-t)
@@ -45,7 +41,6 @@
     - [37. Top 10 từ xuất hiện nhiều nhất](#37-top-10-t-xu-t-hi-n-nhi-u-nh-t)
     - [38. Histogram](#38-histogram)
     - [39. Luật Zipf](#39-lu-t-zipf)
-- [Chương 5: Dependency parsing (係り受け解析)](#ch-ng-5-dependency-parsing)
     - [40. Đọc vào kết quả dependency parsing (theo morphemes)](#40-c-v-o-k-t-qu-dependency-parsing-theo-morphemes)
     - [41. Đọc vào kết quả dependency parsing (theo chunks và depedency relations)](#41-c-v-o-k-t-qu-dependency-parsing-theo-chunks-v-depedency-relations)
     - [42. Hiển thị chunk nguồn (head) và chunk đích (modifier) trong các depedency relations](#42-hi-n-th-chunk-ngu-n-head-v-chunk-ch-modifier-trong-c-c-depedency-relations)
@@ -56,7 +51,6 @@
     - [47. Mining các cấu trúc câu có động từ chức năng](#47-mining-c-c-c-u-tr-c-c-u-c-ng-t-ch-c-n-ng)
     - [48. Trích xuất ra dependency path từ các danh từ](#48-tr-ch-xu-t-ra-dependency-path-t-c-c-danh-t)
     - [49. Trích xuất ra chuỗi liên kết giữa các danh từ](#49-tr-ch-xu-t-ra-chu-i-li-n-k-t-gi-a-c-c-danh-t)
-- [Chương 6: Xử lý văn bản tiếng Anh](#ch-ng-6-x-l-v-n-b-n-ti-ng-anh)
     - [50. Tách câu (Sentence segmentation)](#50-t-ch-c-u-sentence-segmentation)
     - [51. Tách từ](#51-t-ch-t)
     - [52. Stemming](#52-stemming)
@@ -67,7 +61,6 @@
     - [57. Phân tích cấu trúc dependency](#57-ph-n-t-ch-c-u-tr-c-dependency)
     - [58. Trích xuất tuples](#58-tr-ch-xu-t-tuples)
     - [59. Phrase structure analysis](#59-phrase-structure-analysis)
-- [Chương 7: Database](#ch-ng-7-database)
     - [60. Tạo KVS database](#60-t-o-kvs-database)
     - [61. Tìm kiếm với KVS](#61-t-m-ki-m-v-i-kvs)
     - [62. Xử lý kiểu vòng lặp trong KVS](#62-x-l-ki-u-v-ng-l-p-trong-kvs)
@@ -78,7 +71,6 @@
     - [67. Đưa ra multiple documents](#67-a-ra-multiple-documents)
     - [68. Sắp xếp](#68-s-p-x-p)
     - [69. Tạo Web application](#69-t-o-web-application)
-- [Chương 8: Machine Learning](#ch-ng-8-machine-learning)
     - [70. Download và tiền xử lý dữ liệu](#70-download-v-ti-n-x-l-d-li-u)
     - [71. Stopwords](#71-stopwords)
     - [72. Trích xuất đặc trưng](#72-tr-ch-xu-t-c-tr-ng)
@@ -89,7 +81,6 @@
     - [77. Tính độ chính xác của mô hình](#77-t-nh-ch-nh-x-c-c-a-m-h-nh)
     - [78. 5-fold cross validation](#78-5-fold-cross-validation)
     - [79. Vẽ đồ thị precision-recall](#79-v-th-precision-recall)
-- [Chương 9: Không gian vector (I)](#ch-ng-9-kh-ng-gian-vector-i)
     - [80. Tiền xử lý dữ liệu](#80-ti-n-x-l-d-li-u)
     - [81. Xử lý tên các nước tạo thành từ các compound words](#81-x-l-t-n-c-c-n-c-t-o-th-nh-t-c-c-compound-words)
     - [82. Trích xuất context](#82-tr-ch-xu-t-context)
@@ -100,7 +91,6 @@
     - [87. Tính word similarity](#87-t-nh-word-similarity)
     - [88. Hiển thị top 10 có giá trị similarity cao nhất](#88-hi-n-th-top-10-c-gi-tr-similarity-cao-nh-t)
     - [89. Các thao tác cộng/trừ word vectors](#89-c-c-thao-t-c-c-ngtr-word-vectors)
-- [Chương 10: Không gian vector (II)](#ch-ng-10-kh-ng-gian-vector-ii)
     - [90. Sử dụng word2vec để học word vectors](#90-s-d-ng-word2vec-h-c-word-vectors)
     - [91. Chuẩn bị dữ liệu analogy](#91-chu-n-b-d-li-u-analogy)
     - [92. Vận dụng dữ liệu analogy data](#92-v-n-d-ng-d-li-u-analogy-data)
@@ -111,7 +101,6 @@
     - [97. k-means clustering](#97-k-means-clustering)
     - [98. Clustering với phương pháp Ward](#98-clustering-v-i-ph-ng-ph-p-ward)
     - [99. Visualize word vectors bằng phương pháp t-SNE](#99-visualize-word-vectors-b-ng-ph-ng-ph-p-t-sne)
-- [Phụ lục: Corpus, data sử dụng trong 100 bài luyện tập NLP](#ph-l-c-corpus-data-s-d-ng-trong-100-b-i-luy-n-t-p-nlp)
 
 100 bài luyện tập xử lý ngôn ngữ tự nhiên
 =========================================
@@ -128,7 +117,6 @@ Chú ý: Khi sử dụng tài liệu 100 bài luyện tập xử lý ngôn ngữ
 học Tohoku, Nhật Bản. URL: <http://www.cl.ecei.tohoku.ac.jp/nlp100> 
 - Đường link tới bản dịch hiện tại: <https://github.com/minhpqn/nlp_100_drill_exercises>. Người dịch: Phạm Quang Nhật Minh.
 
-<a class="mk-toclify" id="ch-ng-1-b-i-t-p-kh-i-ng"></a>
 ## Chương 1: Bài tập khởi động
 
 <a class="mk-toclify" id="00-o-ng-c-x-u-k-t"></a>
@@ -212,7 +200,6 @@ Anh hợp lệ, ví dụ "I couldn't believe that I could actually understand wh
 was reading : the phenomenal power of the human mind .", chạy chương trình đã
 viết để đưa ra kết quả.
 
-<a class="mk-toclify" id="ch-ng-2-c-c-l-nh-c-b-n-tr-n-m-i-tr-ng-unix"></a>
 ## Chương 2: Các lệnh cơ bản trên môi trường Unix
 
 Các bài tập trong chương này sử dụng dữ liệu trong file
@@ -292,7 +279,6 @@ thể có các giá trị giống nhau trong cột thứ 3).
 cột 1 theo thứ tự từ cao đến thấp của tần suất xuất hiện. Chỉ dùng lệnh cut,
 uniq, sort để thực hiện nhiệm vụ.
 
-<a class="mk-toclify" id="ch-ng-3-bi-u-th-c-ch-nh-quy-regular-expressions"></a>
 ## Chương 3: Biểu thức chính quy (regular expressions)
 
 Bài tập trong chương 3 sử dụng file
@@ -376,7 +362,6 @@ Hint: Gọi API [imageinfo](<https://www.mediawiki.org/wiki/API:Imageinfo>) củ
 [MediaWWiki](<https://www.mediawiki.org/wiki/API:Main_page>), biến đổi các file
 references thành URL.
 
-<a class="mk-toclify" id="ch-ng-4-morphological-analysis-trong-ti-ng-nh-t"></a>
 ## Chương 4: Morphological Analysis trong tiếng Nhật (形態素解析)
 
 Download file [neko.txt](<http://www.cl.ecei.tohoku.ac.jp/nlp100/data/neko.txt>)
@@ -461,7 +446,6 @@ hiện. Trục dọc là các từ.
 Vẽ đồ thị với trục ngang là rank của các từ theo tần suất xuất hiện (cao đến
 thấp), trục dọc là tần suất xuất hiện của các từ.
 
-<a class="mk-toclify" id="ch-ng-5-dependency-parsing"></a>
 ## Chương 5: Dependency parsing (係り受け解析)
 
 Thực hiện phân tích cấu trúc ngữ pháp (dependency parsing) bằng công cụ
@@ -584,13 +568,10 @@ liên kết với với chunk 吾輩は và ものを, chương trình sẽ in r
 Bài tập này tập trung vào các case frame を của các động từ, trong đó động từ có dạng liên kết サ変接続名詞. Cải tiến bài tập 46 để thoả mãn các yêu cầu sau đây.
 
 -   Bài tập này tập trung vào các trường hợp một bunsetsu có dạng sau đây liên kết với động từ. 「サ変接続名詞+を（助詞）」
-
 -   Biến đổi các vị ngữ (predicates) về dạng 「サ変接続名詞+を+動詞の基本形」.
 Nếu trong 1 chunk có nhiều động từ, sử dụng động từ bên trái nhất.
-
 -   Trong trường hợp một vĩ ngữ có liên kết với nhiều trợ từ (chunk), in tất cả
 các trợ từ này theo thứ tự từ điển. Các trợ từ cách nhau bởi dấu cách.
-
 -   Trong trường hợp có nhiều chunks liên kết với một vị ngữ (predicate), in tất
 cả các chunk này đồng nhất với thứ tự in của các trợ từ mà nó bao gồm. Các
 chunk được cách nhau bởi ký tự space.
@@ -662,7 +643,6 @@ Xで -\> 始めて -\> 人間という -\> Y
 
 Xという -\> Y
 
-<a class="mk-toclify" id="ch-ng-6-x-l-v-n-b-n-ti-ng-anh"></a>
 ## Chương 6: Xử lý văn bản tiếng Anh
 
 Cài đặt các chương trình xử lý văn bản tiếng Anh
@@ -749,7 +729,6 @@ Từ kết quả phân tích cây cú pháp phrase structure (theo định dạn
 noun phrases trong văn bản. Chú ý, cần in ra cả các noun phrases nằm trong các
 noun phrases khác (nested NP).
 
-<a class="mk-toclify" id="ch-ng-7-database"></a>
 ## Chương 7: Database
 
 File
@@ -858,7 +837,6 @@ các artist phù hợp với điều kiện tìm kiếm. Các điều kiện tì
 artist (name), aliases, tag, etc. Hiển thị thông tin các artist (theo dòng) theo
 thứ tự từ cao tới thấp của lượng rating.
 
-<a class="mk-toclify" id="ch-ng-8-machine-learning"></a>
 ## Chương 8: Machine Learning
 
 Chương này yêu cầu bạn thực hiện bài toán sentiment analysis trên corpus
@@ -953,7 +931,6 @@ dụng 5-fold cross validation. Đưa ra accuracy, precision, recall, F1 score c
 Vẽ đồ thị precision-recall theo sự thay đổi của giá trị threshold trong mô hình
 logistic regression.
 
-<a class="mk-toclify" id="ch-ng-9-kh-ng-gian-vector-i"></a>
 ## Chương 9: Không gian vector (I)
 
 File
@@ -1005,9 +982,7 @@ sẽ trở thành "Isle\_of\_Man."
 ### 82. Trích xuất context
 
 Sử dụng corpus được tạo ra trong bài tập 81, trích xuất context của tất cả các
-từ xuất hiện trong corpus. Context của mỗi từ *t* trong dữ liệu sẽ cặp với từ
-*t* và xuất ra theo định dạng: các thông tin cách nhau bởi ký tự tab. Context
-của mỗi từ *t* được định nghĩa như sau: 
+từ xuất hiện trong corpus. Context *c* của mỗi từ *t* trong dữ liệu sẽ cặp với từ *t* và xuất ra theo định dạng: các thông tin cách nhau bởi ký tự tab. Context của mỗi từ *t* được định nghĩa như sau: 
 
 - Trích xuất các từ ở trước và sau của
 *t* với kích thước cửa sổ là *d* (chú ý context words của *t* sẽ không bao gồm
@@ -1029,9 +1004,11 @@ Sử dụng đầu ra của bài 82, tính phân bố xuất hiện và các h�
 ### 84. Tạo Matrix của các từ và context words
 
 Sử dụng đầu ra của bài 83, tạo ma trận word/context *X*. Các thành phần X\_tc
-trong ma trận *X* được định nghĩa như sau. - Nếu *f*(*t*,*c*) \>= 10, X\_tc =
-PPMI(t,c) = max{log N\*f(t,c)/f(t,\*) x f(\*,c),0} - Nếu f(t,c) \< 10, X\_tc =
-0.
+trong ma trận *X* được định nghĩa như sau.
+
+- Nếu *f*(*t*,*c*) \>= 10, X\_tc =
+PPMI(t,c) = max{log N\*f(t,c)/f(t,\*) x f(\*,c),0}
+- Nếu f(t,c) \< 10, X\_tc = 0.
 
 Ở đây PPMI(t,c) là ký hiệu của Pointwise Mutual Information. Chú ý vì kích thước
 ma trận X là rất lớn, nên lưu tất cả các giá trị của ma trận vào bộ nhớ là không
@@ -1071,7 +1048,6 @@ nhất với từ "England" và các giá trị cosine similarity tương ứng.
 vec("Madrid") + vec("Athens") sau đó hiển thị top 10 từ có cosine similarity gần
 nhất với vector thu được cùng với các giá trị cosine similarity tương ứng.
 
-<a class="mk-toclify" id="ch-ng-10-kh-ng-gian-vector-ii"></a>
 ## Chương 10: Không gian vector (II)
 
 Trong chương 10, chúng ta sẽ tiếp tục nội dung của chương 9 về không gian
@@ -1150,7 +1126,6 @@ clustering bằng [dendrogram](<https://en.wikipedia.org/wiki/Dendrogram>).
 Với các word vectors thu được từ bài tập 96, visualize không gian vectors bằng
 [phương pháp t-SNE](<http://www.jmlr.org/papers/v9/vandermaaten08a.html>).
 
-<a class="mk-toclify" id="ph-l-c-corpus-data-s-d-ng-trong-100-b-i-luy-n-t-p-nlp"></a>
 ## Phụ lục: Corpus, data sử dụng trong 100 bài luyện tập NLP
 
 -   [hightemp.txt](<http://www.cl.ecei.tohoku.ac.jp/nlp100/data/hightemp.txt>):

@@ -416,13 +416,10 @@ liên kết với với chunk 吾輩は và ものを, chương trình sẽ in r
 Bài tập này tập trung vào các case frame を của các động từ, trong đó động từ có dạng liên kết サ変接続名詞. Cải tiến bài tập 46 để thoả mãn các yêu cầu sau đây.
 
 -   Bài tập này tập trung vào các trường hợp một bunsetsu có dạng sau đây liên kết với động từ. 「サ変接続名詞+を（助詞）」
-
 -   Biến đổi các vị ngữ (predicates) về dạng 「サ変接続名詞+を+動詞の基本形」.
     Nếu trong 1 chunk có nhiều động từ, sử dụng động từ bên trái nhất.
-
 -   Trong trường hợp một vĩ ngữ có liên kết với nhiều trợ từ (chunk), in tất cả
     các trợ từ này theo thứ tự từ điển. Các trợ từ cách nhau bởi dấu cách.
-
 -   Trong trường hợp có nhiều chunks liên kết với một vị ngữ (predicate), in tất
     cả các chunk này đồng nhất với thứ tự in của các trợ từ mà nó bao gồm. Các
     chunk được cách nhau bởi ký tự space.
@@ -798,9 +795,7 @@ sẽ trở thành "Isle\_of\_Man."
 ### 82. Trích xuất context
 
 Sử dụng corpus được tạo ra trong bài tập 81, trích xuất context của tất cả các
-từ xuất hiện trong corpus. Context của mỗi từ *t* trong dữ liệu sẽ cặp với từ
-*t* và xuất ra theo định dạng: các thông tin cách nhau bởi ký tự tab. Context
-của mỗi từ *t* được định nghĩa như sau: 
+từ xuất hiện trong corpus. Context *c* của mỗi từ *t* trong dữ liệu sẽ cặp với từ *t* và xuất ra theo định dạng: các thông tin cách nhau bởi ký tự tab. Context của mỗi từ *t* được định nghĩa như sau: 
 
 - Trích xuất các từ ở trước và sau của
 *t* với kích thước cửa sổ là *d* (chú ý context words của *t* sẽ không bao gồm
@@ -820,9 +815,11 @@ Sử dụng đầu ra của bài 82, tính phân bố xuất hiện và các h�
 ### 84. Tạo Matrix của các từ và context words
 
 Sử dụng đầu ra của bài 83, tạo ma trận word/context *X*. Các thành phần X\_tc
-trong ma trận *X* được định nghĩa như sau. - Nếu *f*(*t*,*c*) \>= 10, X\_tc =
-PPMI(t,c) = max{log N\*f(t,c)/f(t,\*) x f(\*,c),0} - Nếu f(t,c) \< 10, X\_tc =
-0.
+trong ma trận *X* được định nghĩa như sau.
+
+- Nếu *f*(*t*,*c*) \>= 10, X\_tc =
+PPMI(t,c) = max{log N\*f(t,c)/f(t,\*) x f(\*,c),0}
+- Nếu f(t,c) \< 10, X\_tc = 0.
 
 Ở đây PPMI(t,c) là ký hiệu của Pointwise Mutual Information. Chú ý vì kích thước
 ma trận X là rất lớn, nên lưu tất cả các giá trị của ma trận vào bộ nhớ là không
