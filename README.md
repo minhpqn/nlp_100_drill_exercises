@@ -1,106 +1,17 @@
 <a class="mk-toclify" id="table-of-contents"></a>
 
 # Table of Contents
-    - [00. Đảo ngược xâu ký tự](#00-o-ng-c-x-u-k-t)
-    - [01. Trích xuất ký tự từ xâu ký tự](#01-tr-ch-xu-t-k-t-t-x-u-k-t)
-    - [02. Kết hợp hai xâu ký tự](#02-k-t-h-p-hai-x-u-k-t)
-    - [03. Tokenize và thống kê số lượng ký tự của mỗi từ](#03-tokenize-v-th-ng-k-s-l-ng-k-t-c-a-m-i-t)
-    - [04. Ký tự thành phần](#04-k-t-th-nh-ph-n)
-    - [05. n-gram](#05-n-gram)
-    - [06. Tập hợp](#06-t-p-h-p)
-    - [07. Sinh ra câu từ template](#07-sinh-ra-c-u-t-template)
-    - [08. Xâu mật mã](#08-x-u-m-t-m)
-    - [09. [Typoglycemia](<https://en.wikipedia.org/wiki/Typoglycemia>)](#09-typoglycemia-https-enwikipediaorgwikitypoglycemia)
-    - [10. Đếm số dòng trong file](#10-m-s-d-ng-trong-file)
-    - [11. Biến đổi các ký tự tab thành space](#11-bi-n-i-c-c-k-t-tab-th-nh-space)
-    - [12. Lưu cột 1 vào file col1.txt, cột 2 vào file col2.txt](#12-l-u-c-t-1-v-o-file-col1txt-c-t-2-v-o-file-col2txt)
-    - [13. Trộn hai file col1.txt và col2.txt](#13-tr-n-hai-file-col1txt-v-col2txt)
-    - [14. Trích xuất ra N hàng đầu tiên của file](#14-tr-ch-xu-t-ra-n-h-ng-u-ti-n-c-a-file)
-    - [15. Trích xuất ra N hàng cuối cùng của file](#15-tr-ch-xu-t-ra-n-h-ng-cu-i-c-ng-c-a-file)
-    - [16. Chia file thành N phần](#16-chia-file-th-nh-n-ph-n)
-    - [17. Đưa ra các các xâu ký tự duy nhất (unique) trong cột 1](#17-a-ra-c-c-c-c-x-u-k-t-duy-nh-t-unique-trong-c-t-1)
-    - [18. Sắp xếp các hàng theo thứ tự giảm dần của giá trị (numeric value) của cột thứ 3](#18-s-p-x-p-c-c-h-ng-theo-th-t-gi-m-d-n-c-a-gi-tr-numeric-value-c-a-c-t-th-3)
-    - [19. Sắp xếp theo tần suất xuất hiện](#19-s-p-x-p-theo-t-n-su-t-xu-t-hi-n)
-    - [20. Đọc vào dữ liệu JSON](#20-c-v-o-d-li-u-json)
-    - [21. Trích xuất các dòng có chứa tên đề mục](#21-tr-ch-xu-t-c-c-d-ng-c-ch-a-t-n-m-c)
-    - [22. Trích xuất các tên đề mục (Category name)](#22-tr-ch-xu-t-c-c-t-n-m-c-category-name)
-    - [23. Cấu trúc của các Section](#23-c-u-tr-c-c-a-c-c-section)
-    - [24. Trích xuất các liên kết file](#24-tr-ch-xu-t-c-c-li-n-k-t-file)
-    - [25. Trích xuất templates](#25-tr-ch-xu-t-templates)
-    - [26. Loại bỏ các emphasis markups](#26-lo-i-b-c-c-emphasis-markups)
-    - [27. Xoá các link đến các trang Wikipedia khác](#27-xo-c-c-link-n-c-c-trang-wikipedia-kh-c)
-    - [28. Xoá các markup trong văn bản](#28-xo-c-c-markup-trong-v-n-b-n)
-    - [29. Lấy ra các URL của quốc kỳ](#29-l-y-ra-c-c-url-c-a-qu-c-k)
-    - [30. Đọc vào kết quả morphological analysis](#30-c-v-o-k-t-qu-morphological-analysis)
-    - [31. Động từ](#31-ng-t)
-    - [32. Dạng nguyên thể của động từ (動詞の原形)](#32-d-ng-nguy-n-th-c-a-ng-t)
-    - [33. Danh từ dạng サ (サ変名詞)](#33-danh-t-d-ng)
-    - [34. 「AのB」](#34-a-b)
-    - [35. Trích xuất các kết nối danh từ (noun connections hay 名詞の連接)](#35-tr-ch-xu-t-c-c-k-t-n-i-danh-t-noun-connections-hay)
-    - [36. Tần suất xuất hiện của từ](#36-t-n-su-t-xu-t-hi-n-c-a-t)
-    - [37. Top 10 từ xuất hiện nhiều nhất](#37-top-10-t-xu-t-hi-n-nhi-u-nh-t)
-    - [38. Histogram](#38-histogram)
-    - [39. Luật Zipf](#39-lu-t-zipf)
-    - [40. Đọc vào kết quả dependency parsing (theo morphemes)](#40-c-v-o-k-t-qu-dependency-parsing-theo-morphemes)
-    - [41. Đọc vào kết quả dependency parsing (theo chunks và depedency relations)](#41-c-v-o-k-t-qu-dependency-parsing-theo-chunks-v-depedency-relations)
-    - [42. Hiển thị chunk nguồn (head) và chunk đích (modifier) trong các depedency relations](#42-hi-n-th-chunk-ngu-n-head-v-chunk-ch-modifier-trong-c-c-depedency-relations)
-    - [43. Trích xuất các dependency relations giữa các chunk chứa danh từ và các chunk chứa động từ](#43-tr-ch-xu-t-c-c-dependency-relations-gi-a-c-c-chunk-ch-a-danh-t-v-c-c-chunk-ch-a-ng-t)
-    - [44. Visualize cây dependency](#44-visualize-c-y-dependency)
-    - [45. Trích xuất các verb case patterns](#45-tr-ch-xu-t-c-c-verb-case-patterns)
-    - [46. Trích xuất thông tin của case frames của các động từ](#46-tr-ch-xu-t-th-ng-tin-c-a-case-frames-c-a-c-c-ng-t)
-    - [47. Mining các cấu trúc câu có động từ chức năng](#47-mining-c-c-c-u-tr-c-c-u-c-ng-t-ch-c-n-ng)
-    - [48. Trích xuất ra dependency path từ các danh từ](#48-tr-ch-xu-t-ra-dependency-path-t-c-c-danh-t)
-    - [49. Trích xuất ra chuỗi liên kết giữa các danh từ](#49-tr-ch-xu-t-ra-chu-i-li-n-k-t-gi-a-c-c-danh-t)
-    - [50. Tách câu (Sentence segmentation)](#50-t-ch-c-u-sentence-segmentation)
-    - [51. Tách từ](#51-t-ch-t)
-    - [52. Stemming](#52-stemming)
-    - [53. Tokenization](#53-tokenization)
-    - [54. POS Tag](#54-pos-tag)
-    - [55. Trích xuất named entities](#55-tr-ch-xu-t-named-entities)
-    - [56. Phân tích coreference](#56-ph-n-t-ch-coreference)
-    - [57. Phân tích cấu trúc dependency](#57-ph-n-t-ch-c-u-tr-c-dependency)
-    - [58. Trích xuất tuples](#58-tr-ch-xu-t-tuples)
-    - [59. Phrase structure analysis](#59-phrase-structure-analysis)
-    - [60. Tạo KVS database](#60-t-o-kvs-database)
-    - [61. Tìm kiếm với KVS](#61-t-m-ki-m-v-i-kvs)
-    - [62. Xử lý kiểu vòng lặp trong KVS](#62-x-l-ki-u-v-ng-l-p-trong-kvs)
-    - [63. Lưu trữ các objects (đối tượng) trong KVS](#63-l-u-tr-c-c-objects-i-t-ng-trong-kvs)
-    - [64. Tạo MongoDB](#64-t-o-mongodb)
-    - [65. Tìm kiếm trong cơ sở dữ liệu MongoDB](#65-t-m-ki-m-trong-c-s-d-li-u-mongodb)
-    - [66. Lấy số kết quả tìm kiếm](#66-l-y-s-k-t-qu-t-m-ki-m)
-    - [67. Đưa ra multiple documents](#67-a-ra-multiple-documents)
-    - [68. Sắp xếp](#68-s-p-x-p)
-    - [69. Tạo Web application](#69-t-o-web-application)
-    - [70. Download và tiền xử lý dữ liệu](#70-download-v-ti-n-x-l-d-li-u)
-    - [71. Stopwords](#71-stopwords)
-    - [72. Trích xuất đặc trưng](#72-tr-ch-xu-t-c-tr-ng)
-    - [73. Training](#73-training)
-    - [74. Prediction](#74-prediction)
-    - [75. Trọng số của các features (Feature weights)](#75-tr-ng-s-c-a-c-c-features-feature-weights)
-    - [76. Dự đoán trên dữ liệu training](#76-d-o-n-tr-n-d-li-u-training)
-    - [77. Tính độ chính xác của mô hình](#77-t-nh-ch-nh-x-c-c-a-m-h-nh)
-    - [78. 5-fold cross validation](#78-5-fold-cross-validation)
-    - [79. Vẽ đồ thị precision-recall](#79-v-th-precision-recall)
-    - [80. Tiền xử lý dữ liệu](#80-ti-n-x-l-d-li-u)
-    - [81. Xử lý tên các nước tạo thành từ các compound words](#81-x-l-t-n-c-c-n-c-t-o-th-nh-t-c-c-compound-words)
-    - [82. Trích xuất context](#82-tr-ch-xu-t-context)
-    - [83. Tính tần xuất xuất hiện của từ/context](#83-t-nh-t-n-xu-t-xu-t-hi-n-c-a-t-context)
-    - [84. Tạo Matrix của các từ và context words](#84-t-o-matrix-c-a-c-c-t-v-context-words)
-    - [85. Sử dụng PCA để giảm số chiều dữ liệu](#85-s-d-ng-pca-gi-m-s-chi-u-d-li-u)
-    - [86. Hiển thị word vectors](#86-hi-n-th-word-vectors)
-    - [87. Tính word similarity](#87-t-nh-word-similarity)
-    - [88. Hiển thị top 10 có giá trị similarity cao nhất](#88-hi-n-th-top-10-c-gi-tr-similarity-cao-nh-t)
-    - [89. Các thao tác cộng/trừ word vectors](#89-c-c-thao-t-c-c-ngtr-word-vectors)
-    - [90. Sử dụng word2vec để học word vectors](#90-s-d-ng-word2vec-h-c-word-vectors)
-    - [91. Chuẩn bị dữ liệu analogy](#91-chu-n-b-d-li-u-analogy)
-    - [92. Vận dụng dữ liệu analogy data](#92-v-n-d-ng-d-li-u-analogy-data)
-    - [93. Tính độ chính xác của mô hình trên dữ liệu analogy](#93-t-nh-ch-nh-x-c-c-a-m-h-nh-tr-n-d-li-u-analogy)
-    - [94. Tính word similarity trên dữ liệu WordSimilarity-353](#94-t-nh-word-similarity-tr-n-d-li-u-wordsimilarity-353)
-    - [95. Đánh giá trên dữ liệu WordSimilarity-353](#95-nh-gi-tr-n-d-li-u-wordsimilarity-353)
-    - [96. Trích xuất vectors liên quan đến tên nước](#96-tr-ch-xu-t-vectors-li-n-quan-n-t-n-n-c)
-    - [97. k-means clustering](#97-k-means-clustering)
-    - [98. Clustering với phương pháp Ward](#98-clustering-v-i-ph-ng-ph-p-ward)
-    - [99. Visualize word vectors bằng phương pháp t-SNE](#99-visualize-word-vectors-b-ng-ph-ng-ph-p-t-sne)
+- [Chương 1: Bài tập khởi động](#ch-ng-1-b-i-t-p-kh-i-ng)
+- [Chương 2: Các lệnh cơ bản trên môi trường Unix](#ch-ng-2-c-c-l-nh-c-b-n-tr-n-m-i-tr-ng-unix)
+- [Chương 3: Biểu thức chính quy (regular expressions)](#ch-ng-3-bi-u-th-c-ch-nh-quy-regular-expressions)
+- [Chương 4: Morphological Analysis trong tiếng Nhật (形態素解析)](#ch-ng-4-morphological-analysis-trong-ti-ng-nh-t)
+- [Chương 5: Dependency parsing (係り受け解析)](#ch-ng-5-dependency-parsing)
+- [Chương 6: Xử lý văn bản tiếng Anh](#ch-ng-6-x-l-v-n-b-n-ti-ng-anh)
+- [Chương 7: Database](#ch-ng-7-database)
+- [Chương 8: Machine Learning](#ch-ng-8-machine-learning)
+- [Chương 9: Không gian vector (I)](#ch-ng-9-kh-ng-gian-vector-i)
+- [Chương 10: Không gian vector (II)](#ch-ng-10-kh-ng-gian-vector-ii)
+- [Phụ lục: Corpus, data sử dụng trong 100 bài luyện tập NLP](#ph-l-c-corpus-data-s-d-ng-trong-100-b-i-luy-n-t-p-nlp)
 
 100 bài luyện tập xử lý ngôn ngữ tự nhiên
 =========================================
@@ -117,26 +28,23 @@ Chú ý: Khi sử dụng tài liệu 100 bài luyện tập xử lý ngôn ngữ
 học Tohoku, Nhật Bản. URL: <http://www.cl.ecei.tohoku.ac.jp/nlp100> 
 - Đường link tới bản dịch hiện tại: <https://github.com/minhpqn/nlp_100_drill_exercises>. Người dịch: Phạm Quang Nhật Minh.
 
+<a class="mk-toclify" id="ch-ng-1-b-i-t-p-kh-i-ng"></a>
 ## Chương 1: Bài tập khởi động
 
-<a class="mk-toclify" id="00-o-ng-c-x-u-k-t"></a>
 ### 00. Đảo ngược xâu ký tự
 
 Hãy đảo ngược xâu ký tự "stressed" (theo thứ tự từ cuối xâu đến đầu xâu ký tự).
 
-<a class="mk-toclify" id="01-tr-ch-xu-t-k-t-t-x-u-k-t"></a>
 ### 01. Trích xuất ký tự từ xâu ký tự
 
 Từ xâu ký tự "MPyaktQrBoilk RCSahr", hãy trích xuất các ký tự ở vị trí
 2,4,6,8,10,12,14,16,18,20 và kết hợp theo thứ tự đó để tạo thành 1 xâu ký tự mới
 (ký tự space cũng được tính, các ký tự được đánh số từ 1).
 
-<a class="mk-toclify" id="02-k-t-h-p-hai-x-u-k-t"></a>
 ### 02. Kết hợp hai xâu ký tự
 
 Hãy kết hợp hai xâu ký tự "Partrol" và "Car" để tạo thành xâu mới "PatrolCar".
 
-<a class="mk-toclify" id="03-tokenize-v-th-ng-k-s-l-ng-k-t-c-a-m-i-t"></a>
 ### 03. Tokenize và thống kê số lượng ký tự của mỗi từ
 
 1.  Tokenize câu sau: "Now I need a drink, alcoholic of course, after the heavy
@@ -145,7 +53,6 @@ lectures involving quantum mechanics."
 2.  Đưa ra danh sách gồm số ký tự alphabet trong mỗi từ theo thứ tự xuất hiện
 của từ đó trong câu.
 
-<a class="mk-toclify" id="04-k-t-th-nh-ph-n"></a>
 ### 04. Ký tự thành phần
 
 1.  Tokenize câu sau: "Hi He Lied Because Boron Could Not Oxidize Fluorine. New
@@ -155,7 +62,6 @@ Nations Might Also Sign Peace Security Clause. Arthur King Can."
 các từ còn lại lấy ra 2 ký tự đầu tiên. Tạo ra một map từ các xâu ký tự được
 trích ra tới vị trí của từ trong câu.
 
-<a class="mk-toclify" id="05-n-gram"></a>
 ### 05. n-gram
 
 1.  Viết hàm sinh ra tất cả các n-gram từ một dãy cho trước (xâu ký tự hoặc danh
@@ -164,7 +70,6 @@ sách).
 2.  Sử dụng hàm đã viết, sinh ra word bi-gram và character bi-gram từ câu sau:
 "I am an NLPer"
 
-<a class="mk-toclify" id="06-t-p-h-p"></a>
 ### 06. Tập hợp
 
 1.  Sinh ra tập X và Y tương ứng là tập các character bi-gram từ hai xâu ký tự
@@ -174,13 +79,11 @@ sách).
 
 3.  Kiểm tra xem bi-gram 'se' có thuộc tập X (Y) hay không?
 
-<a class="mk-toclify" id="07-sinh-ra-c-u-t-template"></a>
 ### 07. Sinh ra câu từ template
 
 Viết hàm số nhận vào 3 biến x, y, z và trả về xâu ký tự "y vào lúc x giờ là z"
 Sinh ra kết quả với các giá trị x, y, z sau đây x="12" y="Nhiệt độ" z=22.4
 
-<a class="mk-toclify" id="08-x-u-m-t-m"></a>
 ### 08. Xâu mật mã
 
 Từ các ký tự của một xâu cho trước, cài đặt hàm có tên cipher để mã hoá xâu như
@@ -189,7 +92,6 @@ thành ký tự có mã là (219 - mã ký tự). - Các ký tự khác giữ ng
 
 Sử dụng hàm đã viết để mã hoá và giải mã các xâu ký tự tiếng Anh.
 
-<a class="mk-toclify" id="09-typoglycemia-https-enwikipediaorgwikitypoglycemia"></a>
 ### 09. [Typoglycemia](<https://en.wikipedia.org/wiki/Typoglycemia>)
 
 Cho đầu vào là một câu tiếng Anh bao gồm các word ngăn cách nhau bằng ký tự
@@ -200,6 +102,7 @@ Anh hợp lệ, ví dụ "I couldn't believe that I could actually understand wh
 was reading : the phenomenal power of the human mind .", chạy chương trình đã
 viết để đưa ra kết quả.
 
+<a class="mk-toclify" id="ch-ng-2-c-c-l-nh-c-b-n-tr-n-m-i-tr-ng-unix"></a>
 ## Chương 2: Các lệnh cơ bản trên môi trường Unix
 
 Các bài tập trong chương này sử dụng dữ liệu trong file
@@ -211,24 +114,20 @@ bài tập dưới đây. Sau đó, chỉ sử dụng các lệnh trong unix đ�
 vụ đó và xác nhận xem kết quả của chương trình bạn viết có giống với kết quả các
 lệnh unix đưa ra hay không.
 
-<a class="mk-toclify" id="10-m-s-d-ng-trong-file"></a>
 ### 10. Đếm số dòng trong file
 
 Đếm số dòng trong file. Xác nhận kết quả bằng lệnh wc trong unix.
 
-<a class="mk-toclify" id="11-bi-n-i-c-c-k-t-tab-th-nh-space"></a>
 ### 11. Biến đổi các ký tự tab thành space
 
 Chuyễn mỗi ký tự tab thành ký tự space. Xác nhận kết quả lần lượt bằng các lệnh
 sed, tr, và expand.
 
-<a class="mk-toclify" id="12-l-u-c-t-1-v-o-file-col1txt-c-t-2-v-o-file-col2txt"></a>
 ### 12. Lưu cột 1 vào file col1.txt, cột 2 vào file col2.txt
 
 Trích xuất nội dung trong cột 1, cột 2 và lưu vào các file tương ứng: col1.txt
 và col2.txt. Thử thực hiện công việc chỉ dùng lệnh cut trong unix.
 
-<a class="mk-toclify" id="13-tr-n-hai-file-col1txt-v-col2txt"></a>
 ### 13. Trộn hai file col1.txt và col2.txt
 
 Kết hợp nội dung trong 2 file col1.txt và col2.txt để tạo thành một file mới có
@@ -236,20 +135,17 @@ nội dung giống với cột 1 và cột 2 trong file ban đầu (các cột c
 tự tab). Sử dụng lệnh paste để thực hiện bài tập và xác nhận kết quả của chương
 trình bạn viết.
 
-<a class="mk-toclify" id="14-tr-ch-xu-t-ra-n-h-ng-u-ti-n-c-a-file"></a>
 ### 14. Trích xuất ra N hàng đầu tiên của file
 
 Viết chương trình trích xuất ra N hàng đầu tiên của file. Biến số dạng dòng lệnh
 là số tự nhiên N. Sử dụng lệnh head trong unix để thực hiện công việc.
 
-<a class="mk-toclify" id="15-tr-ch-xu-t-ra-n-h-ng-cu-i-c-ng-c-a-file"></a>
 ### 15. Trích xuất ra N hàng cuối cùng của file
 
 Viết chương trình trích xuất ra N hàng cuối cùng của file. Chương trình nhận đầu
 vào từ dòng lệnh là số tự nhiên N. Sử dụng lệnh tail trong unix để thực hiện
 công việc.
 
-<a class="mk-toclify" id="16-chia-file-th-nh-n-ph-n"></a>
 ### 16. Chia file thành N phần
 
 Chia file thành các files nhỏ với N lines mỗi file (đơn vị là các hàng trong
@@ -259,26 +155,24 @@ split để thực hiện công việc (split -l N).
 Sau đó, cải tiến chương trình để chia file thành thành N phần bằng nhau (thay vì
 N lines mỗi file).
 
-<a class="mk-toclify" id="17-a-ra-c-c-c-c-x-u-k-t-duy-nh-t-unique-trong-c-t-1"></a>
 ### 17. Đưa ra các các xâu ký tự duy nhất (unique) trong cột 1
 
 Đưa ra các xâu ký tự duy nhất trong cột 1 của file. Sử dụng lệnh cut, sort, uniq
 để thực hiện nhiệm vụ.
 
-<a class="mk-toclify" id="18-s-p-x-p-c-c-h-ng-theo-th-t-gi-m-d-n-c-a-gi-tr-numeric-value-c-a-c-t-th-3"></a>
 ### 18. Sắp xếp các hàng theo thứ tự giảm dần của giá trị (numeric value) của cột thứ 3
 
 Viết chương trình thực hiện nhiệm vụ trên. Dùng lệnh sort để xác nhận (trong bài
 tập này, kết quả của chương trình của bạn với lệnh sort có thể khác nhau do có
 thể có các giá trị giống nhau trong cột thứ 3).
 
-<a class="mk-toclify" id="19-s-p-x-p-theo-t-n-su-t-xu-t-hi-n"></a>
 ### 19. Sắp xếp theo tần suất xuất hiện
 
 Đưa ra tần suất xuất hiện của các giá trị trong cột 1; sắp xếp các giá trị trong
 cột 1 theo thứ tự từ cao đến thấp của tần suất xuất hiện. Chỉ dùng lệnh cut,
 uniq, sort để thực hiện nhiệm vụ.
 
+<a class="mk-toclify" id="ch-ng-3-bi-u-th-c-ch-nh-quy-regular-expressions"></a>
 ## Chương 3: Biểu thức chính quy (regular expressions)
 
 Bài tập trong chương 3 sử dụng file
@@ -290,7 +184,6 @@ lưu trữ tại khoá "text". Các dòng này được lưu trữ ở định d
 
 Lập trình để xử lý các việc sau đây.
 
-<a class="mk-toclify" id="20-c-v-o-d-li-u-json"></a>
 ### 20. Đọc vào dữ liệu JSON
 
 Đọc dữ liệu từ file JSON chứa các tài liệu Wikipedia, trích xuất & hiển thị nội
@@ -298,37 +191,31 @@ dung của tài liệu (trường text của JSON object) có liên quan đến 
 nghĩa là nước Anh). Sử dụng các nội dung của tài liệu được trích xuất này để
 thực thi các nhiệm vụ trong các bài tập từ 21-29.
 
-<a class="mk-toclify" id="21-tr-ch-xu-t-c-c-d-ng-c-ch-a-t-n-m-c"></a>
 ### 21. Trích xuất các dòng có chứa tên đề mục
 
 Trong các tài liệu, trích xuất các dòng có chứa tên đề mục (category name hay
 カテゴリ名).
 
-<a class="mk-toclify" id="22-tr-ch-xu-t-c-c-t-n-m-c-category-name"></a>
 ### 22. Trích xuất các tên đề mục (Category name)
 
 Trích xuất tên đề mục của trong các tài liệu. Trong bài tập này, cần trích xuất
 chính xác các tên đề mục chứ không phải dòng chứa tên đề mục.
 
-<a class="mk-toclify" id="23-c-u-tr-c-c-a-c-c-section"></a>
 ### 23. Cấu trúc của các Section
 
 Hiển thị tên của các section và level của các section trong các tài liệu
 Wikipedia (Ví dụ với section == Section Name ==" thì level bằng 1)
 
-<a class="mk-toclify" id="24-tr-ch-xu-t-c-c-li-n-k-t-file"></a>
 ### 24. Trích xuất các liên kết file
 
 Trích xuất toàn bộ các liên kết đến các media files trong tài liệu.
 
-<a class="mk-toclify" id="25-tr-ch-xu-t-templates"></a>
 ### 25. Trích xuất templates
 
 Trích xuất vị trí và tên các folder có template "基礎情報" trong tài liệu. Lưu
 kết quả trong các đối tượng dictionary. Tham khảo về templates tại
 [đây](<https://en.wikipedia.org/wiki/Help:Infobox>).
 
-<a class="mk-toclify" id="26-lo-i-b-c-c-emphasis-markups"></a>
 ### 26. Loại bỏ các emphasis markups
 
 Trong khi làm các xử lý ở bài tập 25, xoá các emphasis markup (italic, bold,
@@ -338,7 +225,6 @@ markup](<https://en.wikipedia.org/wiki/Help:Cheatsheet>), bảng tham khảo b�
 tiếng Nhật tại
 [マークアップ早見表](<http://ja.wikipedia.org/wiki/Help:%E6%97%A9%E8%A6%8B%E8%A1%A8>)).
 
-<a class="mk-toclify" id="27-xo-c-c-link-n-c-c-trang-wikipedia-kh-c"></a>
 ### 27. Xoá các link đến các trang Wikipedia khác
 
 Nhiệm vụ giống như bài 26 và thêm vào xử lý sau. Xoá các markups của liên kết
@@ -348,13 +234,11 @@ markup](<https://en.wikipedia.org/wiki/Help:Cheatsheet>), bảng tham khảo b�
 tiếng Nhật tại
 [マークアップ早見表](<http://ja.wikipedia.org/wiki/Help:%E6%97%A9%E8%A6%8B%E8%A1%A8>)).
 
-<a class="mk-toclify" id="28-xo-c-c-markup-trong-v-n-b-n"></a>
 ### 28. Xoá các markup trong văn bản
 
 Thêm vào xử lý ở bài 27. Xoá các markup trong các templates càng nhiều càng tốt
 và in ra các thông tin cơ bản về quốc gia.
 
-<a class="mk-toclify" id="29-l-y-ra-c-c-url-c-a-qu-c-k"></a>
 ### 29. Lấy ra các URL của quốc kỳ
 
 Sử dụng nội dung của các template và lấy ra URl đến quốc kỳ (国旗画像のURL).
@@ -362,6 +246,7 @@ Hint: Gọi API [imageinfo](<https://www.mediawiki.org/wiki/API:Imageinfo>) củ
 [MediaWWiki](<https://www.mediawiki.org/wiki/API:Main_page>), biến đổi các file
 references thành URL.
 
+<a class="mk-toclify" id="ch-ng-4-morphological-analysis-trong-ti-ng-nh-t"></a>
 ## Chương 4: Morphological Analysis trong tiếng Nhật (形態素解析)
 
 Download file [neko.txt](<http://www.cl.ecei.tohoku.ac.jp/nlp100/data/neko.txt>)
@@ -381,7 +266,6 @@ Chú ý: Trong các bài tập 37, 38, 39 có thể sử dụng các phần mề
 @All: Với các bạn không quen xử lý text tiếng Nhật, có thể dùng một file text
 tiếng Anh và thực hiện POS tagging, sau đó làm các bài tập dưới đây.
 
-<a class="mk-toclify" id="30-c-v-o-k-t-qu-morphological-analysis"></a>
 ### 30. Đọc vào kết quả morphological analysis
 
 Viết chương trình đọc vào kết quả morphological analysis (file neko.txt.mecab).
@@ -392,60 +276,52 @@ các key tương ứng là: surface, base, pos, pos1. Lưu trữ mỗi câu bằ
 của các morpheme. Trong các bài tập còn lại trong chương 4, hãy sử dụng cách tổ
 chức dữ liệu trong bài 30 này.
 
-<a class="mk-toclify" id="31-ng-t"></a>
 ### 31. Động từ
 
 Trích xuất tất cả các surface forms của động từ (pos=動詞).
 
-<a class="mk-toclify" id="32-d-ng-nguy-n-th-c-a-ng-t"></a>
 ### 32. Dạng nguyên thể của động từ (動詞の原形)
 
 Trích xuất tất cả dạng nguyên thể của động từ (base form).
 
-<a class="mk-toclify" id="33-danh-t-d-ng"></a>
 ### 33. Danh từ dạng サ (サ変名詞)
 
 Trích xuất toàn bộ các danh từ dạng サ (サ変名詞). Tham khảo trang Wikipedia
 tiếng Nhật về
 [サ行変格活用](<https://ja.wikipedia.org/wiki/%E3%82%B5%E8%A1%8C%E5%A4%89%E6%A0%BC%E6%B4%BB%E7%94%A8>).
 
-<a class="mk-toclify" id="34-a-b"></a>
 ### 34. 「AのB」
 
 Trích xuất tất cả các danh từ ghép (compound nouns) gồm 2 danh từ kết nối bằng
 の.
 
-<a class="mk-toclify" id="35-tr-ch-xu-t-c-c-k-t-n-i-danh-t-noun-connections-hay"></a>
 ### 35. Trích xuất các kết nối danh từ (noun connections hay 名詞の連接)
 
 Trích xuất tất cả các noun connections (các danh từ đứng cạnh nhau liên tiếp).
 Khi trích xuất, chú ý trích xuất chuỗi danh từ matching dài nhất có thể. Ví dụ
 ABC trong đó A, B, C là danh từ thì phải trích xuất ABC thay vì AB.
 
-<a class="mk-toclify" id="36-t-n-su-t-xu-t-hi-n-c-a-t"></a>
 ### 36. Tần suất xuất hiện của từ
 
 Lập trình tính tần suất xuất hiện của từ trong văn bản. Đưa ra các từ theo thứ
 tự giảm dần của tần suất xuất hiện.
 
-<a class="mk-toclify" id="37-top-10-t-xu-t-hi-n-nhi-u-nh-t"></a>
 ### 37. Top 10 từ xuất hiện nhiều nhất
 
 Vẽ đồ thị (ví dụ bar graph) của tần suất xuất hiện của 10 từ xuất hiện nhiều
 nhất trong văn bản.
 
-<a class="mk-toclify" id="38-histogram"></a>
 ### 38. Histogram
 
 Vẽ đồ thị histogram tần suất xuất hiện của các từ. Trục ngang là tần suất xuất
 hiện. Trục dọc là các từ.
 
-<a class="mk-toclify" id="39-lu-t-zipf"></a>
 ### 39. Luật Zipf
 
 Vẽ đồ thị với trục ngang là rank của các từ theo tần suất xuất hiện (cao đến
 thấp), trục dọc là tần suất xuất hiện của các từ.
 
+<a class="mk-toclify" id="ch-ng-5-dependency-parsing"></a>
 ## Chương 5: Dependency parsing (係り受け解析)
 
 Thực hiện phân tích cấu trúc ngữ pháp (dependency parsing) bằng công cụ
@@ -454,7 +330,6 @@ Thực hiện phân tích cấu trúc ngữ pháp (dependency parsing) bằng c�
 quả vào file neko.txt.cabocha. Sử dụng file kết quả này làm đầu vào cho các bài
 tập dưới đây.
 
-<a class="mk-toclify" id="40-c-v-o-k-t-qu-dependency-parsing-theo-morphemes"></a>
 ### 40. Đọc vào kết quả dependency parsing (theo morphemes)
 
 Cài đặt lớp Morph cho các morphemes. Lớp này có các biến thành phần (member
@@ -464,7 +339,6 @@ quả phân tích dependency parsing trong file neko.txt.cabocha. Mỗi câu s�
 một danh sách các Morph objects. Hiển thị danh sách các morphemes cho câu thứ 3
 trong văn bản.
 
-<a class="mk-toclify" id="41-c-v-o-k-t-qu-dependency-parsing-theo-chunks-v-depedency-relations"></a>
 ### 41. Đọc vào kết quả dependency parsing (theo chunks và depedency relations)
 
 Tiếp theo bài 40, cài đặt lớp Chunk để lưu trữ các chunk (hay bunsetsu (文節)).
@@ -478,21 +352,18 @@ thứ 8 của file đầu vào.
 Các bài tập còn lại trong chương 5 sẽ sử dụng các chương trình được tạo ra
 trong bài tập 40 và 41.
 
-<a class="mk-toclify" id="42-hi-n-th-chunk-ngu-n-head-v-chunk-ch-modifier-trong-c-c-depedency-relations"></a>
 ### 42. Hiển thị chunk nguồn (head) và chunk đích (modifier) trong các depedency relations
 
 Hiển thị nội dung (dạng text) các chunk nguồn (head) và chunk đích (modifier)
 trên mỗi dòng và cách nhau bởi ký tự tab. Chú ý không hiển thị các dấu
 (punctuation marks) trong các chunk.
 
-<a class="mk-toclify" id="43-tr-ch-xu-t-c-c-dependency-relations-gi-a-c-c-chunk-ch-a-danh-t-v-c-c-chunk-ch-a-ng-t"></a>
 ### 43. Trích xuất các dependency relations giữa các chunk chứa danh từ và các chunk chứa động từ
 
 Trích xuất các dependency relations giữa các chunk chứa danh từ và các chunk
 chứa động từ. In ra theo định dạng tab. Tương tự như bài 42, không hiển thị các
 dấu (punctuation marks) trong các chunk.
 
-<a class="mk-toclify" id="44-visualize-c-y-dependency"></a>
 ### 44. Visualize cây dependency
 
 Visualize dependency trees của một câu cho trước. Khi visualize, biến các
@@ -502,7 +373,6 @@ sử dụng [Graphviz](<http://www.graphviz.org/>). Nếu sử dụng Python, c�
 thị đồ thị có hướng bằng thư viện/package
 [pydot](<https://code.google.com/p/pydot/>).
 
-<a class="mk-toclify" id="45-tr-ch-xu-t-c-c-verb-case-patterns"></a>
 ### 45. Trích xuất các verb case patterns
 
 Yêu cầu của bài tập này là tìm hiểu (investigate) về case frame trong tiếng Nhật
@@ -537,7 +407,6 @@ Lưu output của chương trình ra file, xác nhận các mục sau chỉ vớ
 Tham khảo về case frame structures trong tiếng Nhật tại
 [đây](<http://www.aclweb.org/anthology/C00-1063>) (Kawahara et al., 2010).
 
-<a class="mk-toclify" id="46-tr-ch-xu-t-th-ng-tin-c-a-case-frames-c-a-c-c-ng-t"></a>
 ### 46. Trích xuất thông tin của case frames của các động từ
 
 Chỉnh sửa bài tập 45, trích xuất thêm các chunks mà các vị ngữ (predicate) liên
@@ -560,7 +429,6 @@ liên kết với với chunk 吾輩は và ものを, chương trình sẽ in r
 
 見る は を 吾輩 ものを
 
-<a class="mk-toclify" id="47-mining-c-c-c-u-tr-c-c-u-c-ng-t-ch-c-n-ng"></a>
 ### 47. Mining các cấu trúc câu có động từ chức năng
 
 (cấu trúc này có tên tiếng Nhật là 機能動詞構文)
@@ -587,7 +455,6 @@ Lưu kết quả của bài tập 47 ra file, chỉ sử dụng lệnh unix đ�
 
 - Các vị ngữ và các case patterns
 
-<a class="mk-toclify" id="48-tr-ch-xu-t-ra-dependency-path-t-c-c-danh-t"></a>
 ### 48. Trích xuất ra dependency path từ các danh từ
 
 Chương trình yêu cầu trích xuất ra depedency path của tất cả các chunk có chứa
@@ -610,7 +477,6 @@ trong file neko.txt.cabocha) như sau:
 
 ものを -\> 見た
 
-<a class="mk-toclify" id="49-tr-ch-xu-t-ra-chu-i-li-n-k-t-gi-a-c-c-danh-t"></a>
 ### 49. Trích xuất ra chuỗi liên kết giữa các danh từ
 
 Trích xuất dependency path ngắn nhất liên kết giữa các noun chunk. Đối với cặp
@@ -643,12 +509,12 @@ Xで -\> 始めて -\> 人間という -\> Y
 
 Xという -\> Y
 
+<a class="mk-toclify" id="ch-ng-6-x-l-v-n-b-n-ti-ng-anh"></a>
 ## Chương 6: Xử lý văn bản tiếng Anh
 
 Cài đặt các chương trình xử lý văn bản tiếng Anh
 ([nlp.txt](<http://www.cl.ecei.tohoku.ac.jp/nlp100/data/nlp.txt>)).
 
-<a class="mk-toclify" id="50-t-ch-c-u-sentence-segmentation"></a>
 ### 50. Tách câu (Sentence segmentation)
 
 Sử dụng patterns (. or ; or : or ? or !) -\> ký tự space -\> chữ cái tiếng Anh
@@ -656,14 +522,12 @@ viết hoa (captial letter) để tách các câu trong văn bản. Đầu vào 
 [nlp.txt](<http://www.cl.ecei.tohoku.ac.jp/nlp100/data/nlp.txt>), in ra mỗi câu
 trong văn bản trên 1 dòng.
 
-<a class="mk-toclify" id="51-t-ch-t"></a>
 ### 51. Tách từ
 
 Coi ký tự trắng (space) là ký tự phân tách các từ. Lấy đầu ra của bài 50 làm đầu
 vào, trích xuất các từ trong các câu và in ra theo định dạng: mỗi dòng 1 từ. In
 ra dòng trắng để đánh dấu kết thúc câu.
 
-<a class="mk-toclify" id="52-stemming"></a>
 ### 52. Stemming
 
 Đầu vào là đầu ra của bài tập 51, áp dụng thuật toán Porter stemming để lấy ra
@@ -671,7 +535,6 @@ gốc của các từ (stem). In ra các từ và stem cách nhau bởi ký tự
 dụng Python, bạn có thể sử dụng module
 [stemming](<https://pypi.python.org/pypi/stemming>).
 
-<a class="mk-toclify" id="53-tokenization"></a>
 ### 53. Tokenization
 
 Sử dụng tool [Stanford Core
@@ -679,19 +542,16 @@ NLP](<http://nlp.stanford.edu/software/corenlp.shtml>) để phân tích văn b�
 vào và lấy ra output theo định dạng XML. Sau đó đọc vào đầu ra XML và trích xuất
 ra các token (word) theo định dạng mỗi word trên 1 dòng.
 
-<a class="mk-toclify" id="54-pos-tag"></a>
 ### 54. POS Tag
 
 Đọc vào kết quả phân tích dạng XML của Stanford Core NLP. Trích xuất ra word,
 lemma, POS tag và in ra các thuộc tính của mỗi word trên một dòng; các thuộc
 tính cách nhau bởi dấu tab.
 
-<a class="mk-toclify" id="55-tr-ch-xu-t-named-entities"></a>
 ### 55. Trích xuất named entities
 
 Trích xuất tất cả các named entities trong văn bản đầu vào.
 
-<a class="mk-toclify" id="56-ph-n-t-ch-coreference"></a>
 ### 56. Phân tích coreference
 
 Dựa trên kết quả phân tích coreference của Stanford Core NLP, thay thế các
@@ -699,7 +559,6 @@ mention bằng representative mention. Chú ý khi thay thế các mention bằn
 representative mention, lưu lại các mention gốc trong dấu ngoặc theo định dạng
 representative mention (mention).
 
-<a class="mk-toclify" id="57-ph-n-t-ch-c-u-tr-c-dependency"></a>
 ### 57. Phân tích cấu trúc dependency
 
 Từ kết quả phân tích dependency của Stanford Core NLP (collapsed-dependencies),
@@ -710,7 +569,6 @@ sử dụng [Graphviz](<http://www.graphviz.org/>). Nếu sử dụng Python, c�
 thị đồ thị có hướng bằng thư viện/package
 [pydot](<https://code.google.com/p/pydot/>).
 
-<a class="mk-toclify" id="58-tr-ch-xu-t-tuples"></a>
 ### 58. Trích xuất tuples
 
 Từ kết quả phân tích dependency của Stanford Core NLP (collapsed-dependencies),
@@ -721,7 +579,6 @@ các dependency relations: nsubj, dobj - Subject: Các node con (dependant) tron
 các quan hệ nsubj từ predicate - Purpose: Các node con (dependant) trong các
 quan hệ dobj từ predicate
 
-<a class="mk-toclify" id="59-phrase-structure-analysis"></a>
 ### 59. Phrase structure analysis
 
 Từ kết quả phân tích cây cú pháp phrase structure (theo định dạng
@@ -729,6 +586,7 @@ Từ kết quả phân tích cây cú pháp phrase structure (theo định dạn
 noun phrases trong văn bản. Chú ý, cần in ra cả các noun phrases nằm trong các
 noun phrases khác (nested NP).
 
+<a class="mk-toclify" id="ch-ng-7-database"></a>
 ## Chương 7: Database
 
 File
@@ -774,62 +632,52 @@ Với document-oriented database, có thể sử dụng
 [MongoDB](<http://www.mongodb.org/>), [CouchDB](<http://couchdb.apache.org/>)
 hoặc [RethinkDB](<http://rethinkdb.com/>).
 
-<a class="mk-toclify" id="60-t-o-kvs-database"></a>
 ### 60. Tạo KVS database
 
 Để giúp cho việc tìm kiếm các trường (fields) từ name đến area của dữ liệu, hãy
 sử dụng Key-Value-Store (KVS) để lưu trữ dữ liệu.
 
-<a class="mk-toclify" id="61-t-m-ki-m-v-i-kvs"></a>
 ### 61. Tìm kiếm với KVS
 
 Sử dụng cơ sở dữ liệu đã tạo ra trong bài tập 60, tìm kiếm khu vực hoạt động
 (area) của một artist cho trước.
 
-<a class="mk-toclify" id="62-x-l-ki-u-v-ng-l-p-trong-kvs"></a>
 ### 62. Xử lý kiểu vòng lặp trong KVS
 
 Sử dụng cơ sở dữ liệu đã tạo ra trong bài tập 60, hãy đưa ra số artist có khu
 vực hoạt động (area) là Japan.
 
-<a class="mk-toclify" id="63-l-u-tr-c-c-objects-i-t-ng-trong-kvs"></a>
 ### 63. Lưu trữ các objects (đối tượng) trong KVS
 
 Sử dụng KVS, hãy tạo ra database cho việc tìm kiếm các trường từ name đến tag và
 số lượng tag. Thử tìm kiếm các trường từ name đến tag và số lượng tag với
 database đã tạo ra.
 
-<a class="mk-toclify" id="64-t-o-mongodb"></a>
 ### 64. Tạo MongoDB
 
 Hãy lưu thông tin của artist (artist.json.gz) vào cơ sở dữ liệu MongoDB. Thêm
 nữa, hãy tạo indexes với các trường sau: name, aliases.name, tags.value,
 rating.value.
 
-<a class="mk-toclify" id="65-t-m-ki-m-trong-c-s-d-li-u-mongodb"></a>
 ### 65. Tìm kiếm trong cơ sở dữ liệu MongoDB
 
 Sử dụng interactive shell của MongoDB, đưa ra các thông tin liên quan đến artist
 có tên "Queen". Tiếp theo, cài đặt chương trình thực hiện chức năng đó.
 
-<a class="mk-toclify" id="66-l-y-s-k-t-qu-t-m-ki-m"></a>
 ### 66. Lấy số kết quả tìm kiếm
 
 Sử dụng interactive shell của MongoDB, tính số lượng các artist có khu vực hoạt
 động (area) là "Japan."
 
-<a class="mk-toclify" id="67-a-ra-multiple-documents"></a>
 ### 67. Đưa ra multiple documents
 
 Tìm kiếm các artist có aliases cho trước.
 
-<a class="mk-toclify" id="68-s-p-x-p"></a>
 ### 68. Sắp xếp
 
 Trong số các artist có tag "dance", lấy ra top 10 artist có số phiếu bình chọn
 cao nhất.
 
-<a class="mk-toclify" id="69-t-o-web-application"></a>
 ### 69. Tạo Web application
 
 Tạo ứng dụng Web cho phép người dùng nhập vào các điều kiện tìm kiếm và hiển thị
@@ -837,6 +685,7 @@ các artist phù hợp với điều kiện tìm kiếm. Các điều kiện tì
 artist (name), aliases, tag, etc. Hiển thị thông tin các artist (theo dòng) theo
 thứ tự từ cao tới thấp của lượng rating.
 
+<a class="mk-toclify" id="ch-ng-8-machine-learning"></a>
 ## Chương 8: Machine Learning
 
 Chương này yêu cầu bạn thực hiện bài toán sentiment analysis trên corpus
@@ -847,7 +696,6 @@ Data](<http://www.cs.cornell.edu/people/pabo/movie-review-data/>) của tác gi�
 Pang và Lillian Lee. Yêu cầu của bài toán sentiment analysis là phân loại các
 câu thành positive và negative sentiments.
 
-<a class="mk-toclify" id="70-download-v-ti-n-x-l-d-li-u"></a>
 ### 70. Download và tiền xử lý dữ liệu
 
 Sử dụng dữ liệu liên quan đến sentiment polarity của các câu (download tại
@@ -865,7 +713,6 @@ dung của câu cách nhau bởi ký tự trắng).
 Sau khi đã thu được file sentiment.txt, xác nhận số lượng các câu với positive
 polarity và các câu với negative polarity.
 
-<a class="mk-toclify" id="71-stopwords"></a>
 ### 71. Stopwords
 
 Tạo ra danh sách các stopwords trong tiếng Anh. Sau đó viết 1 hàm để kiểm tra
@@ -873,7 +720,6 @@ một từ có thuộc danh sách stopwords hay không. Hàm sẽ trả về gi�
 cho trước thuộc danh sách stopwords. Ngược lại hàm sẽ trả về giá trị FALSE. Sau
 đó viết mô tả về các test cho hàm đã viết.
 
-<a class="mk-toclify" id="72-tr-ch-xu-t-c-tr-ng"></a>
 ### 72. Trích xuất đặc trưng
 
 Tự thiết kế các đặc trưng cho bài toán sentiment analysis. Sau đó trích xuất đặc
@@ -883,39 +729,33 @@ Hint: phương pháp trích xuất đặc trưng đơn giản nhất là sử d�
 các từ không trong danh sách các stopwords. Phương pháp này có thể sử dụng để
 làm hệ thống baseline.
 
-<a class="mk-toclify" id="73-training"></a>
 ### 73. Training
 
 Training model bằng phương pháp logistics regressions sử dụng các đặc trưng tạo
 ra trong bài 72.
 
-<a class="mk-toclify" id="74-prediction"></a>
 ### 74. Prediction
 
 Sử dụng mô hình logistics regressions đã huấn luyện trong bài 73, hãy viết
 chương trình dự đoán polarity cho một câu đầu vào và tính xác suất cho các nhãn
 (+1, -1).
 
-<a class="mk-toclify" id="75-tr-ng-s-c-a-c-c-features-feature-weights"></a>
 ### 75. Trọng số của các features (Feature weights)
 
 Trong mô hình logistics regression đã huấn luyện trong bài 73, đưa ra top 10 các
 features có trọng số cao nhất và top 10 các features có trọng số thấp nhất.
 
-<a class="mk-toclify" id="76-d-o-n-tr-n-d-li-u-training"></a>
 ### 76. Dự đoán trên dữ liệu training
 
 Sử dụng mô hình đã học trong bài 73 để đưa ra dự đoán trên dữ liệu training. Đưa
 ra nhãn gốc, nhãn dự đoán, và xác suất của nhãn dự đoán cho mỗi câu trong dữ
 liệu (cách nhau bởi ký tự tab).
 
-<a class="mk-toclify" id="77-t-nh-ch-nh-x-c-c-a-m-h-nh"></a>
 ### 77. Tính độ chính xác của mô hình
 
 Sử dụng đầu ra của bài 76, tính accuracy cho toàn bộ dữ liệu; precision, recall,
 F1 cho nhãn +1.
 
-<a class="mk-toclify" id="78-5-fold-cross-validation"></a>
 ### 78. 5-fold cross validation
 
 Vì các thực nghiệm trong bài 76, 77 đánh giá model trên dữ liệu huấn luyện nên
@@ -925,12 +765,12 @@ mô hình "fit" với dữ liệu training chứ không đánh giá khả năng 
 dụng 5-fold cross validation. Đưa ra accuracy, precision, recall, F1 score cho
 5-fold cross validation (tính trung bình của 5 folds).
 
-<a class="mk-toclify" id="79-v-th-precision-recall"></a>
 ### 79. Vẽ đồ thị precision-recall
 
 Vẽ đồ thị precision-recall theo sự thay đổi của giá trị threshold trong mô hình
 logistic regression.
 
+<a class="mk-toclify" id="ch-ng-9-kh-ng-gian-vector-i"></a>
 ## Chương 9: Không gian vector (I)
 
 File
@@ -948,7 +788,6 @@ Chú ý, bài 83 yêu cầu 7GB memory. Trong trường hợp lượng memory c�
 liệu trong file
 [enwiki-20150112-400-r10-105752.txt.bz2](<http://www.cl.ecei.tohoku.ac.jp/nlp100/data/enwiki-20150112-400-r10-105752.txt.bz2>).
 
-<a class="mk-toclify" id="80-ti-n-x-l-d-li-u"></a>
 ### 80. Tiền xử lý dữ liệu
 
 Sử dụng khoảng trắng là ký tự ngăn cách để tokenize các từ trong các câu. Phương
@@ -962,7 +801,6 @@ sau đây.
 Sau khi tiền xử lý dữ liệu, lưu file dữ liệu gồm danh sách các từ cách nhau bởi
 khoảng trắng.
 
-<a class="mk-toclify" id="81-x-l-t-n-c-c-n-c-t-o-th-nh-t-c-c-compound-words"></a>
 ### 81. Xử lý tên các nước tạo thành từ các compound words
 
 Trong tiếng Anh, nhiều từ cạnh nhau có thể tạo thành một từ có ý nghĩa. Ví dụ,
@@ -978,7 +816,6 @@ các nước này để đoán nhận các từ ghép là tên nước trong d�
 thành phần. Ví dụ "United States" sẽ trở thành "United\_States", "Isle of Man"
 sẽ trở thành "Isle\_of\_Man."
 
-<a class="mk-toclify" id="82-tr-ch-xu-t-context"></a>
 ### 82. Trích xuất context
 
 Sử dụng corpus được tạo ra trong bài tập 81, trích xuất context của tất cả các
@@ -990,7 +827,6 @@ bản thân của từ *t*)
 - Với mỗi từ *t*, kích thước của context (window size) *d*
 sẽ được chọn ngẫu nhiên trong tập {1, 2, 3, 4, 5}.
 
-<a class="mk-toclify" id="83-t-nh-t-n-xu-t-xu-t-hi-n-c-a-t-context"></a>
 ### 83. Tính tần xuất xuất hiện của từ/context
 
 Sử dụng đầu ra của bài 82, tính phân bố xuất hiện và các hằng số sau: 
@@ -1000,7 +836,6 @@ Sử dụng đầu ra của bài 82, tính phân bố xuất hiện và các h�
 - *f*(\*,*c*): số lần xuất hiện của context word *c*.
 - *N*: Tổng số lần xuất hiện của từ và các context word (hằng số).
 
-<a class="mk-toclify" id="84-t-o-matrix-c-a-c-c-t-v-context-words"></a>
 ### 84. Tạo Matrix của các từ và context words
 
 Sử dụng đầu ra của bài 83, tạo ma trận word/context *X*. Các thành phần X\_tc
@@ -1015,52 +850,46 @@ ma trận X là rất lớn, nên lưu tất cả các giá trị của ma trậ
 thể. Bạn có thể sử dụng kỹ thuật lưu trữ ma trận thưa với chú ý rằng, phần lớn
 giá trị của các phần tử trong X bằng 0.
 
-<a class="mk-toclify" id="85-s-d-ng-pca-gi-m-s-chi-u-d-li-u"></a>
 ### 85. Sử dụng PCA để giảm số chiều dữ liệu
 
 Sử dụng thuật toán PCA cho ma trận thu được trong bài tập 84 để giảm số chiều dữ
 liệu sao cho các word vector thu được có số chiều là 300.
 
-<a class="mk-toclify" id="86-hi-n-th-word-vectors"></a>
 ### 86. Hiển thị word vectors
 
 Đọc vào các word vectors trong bài tập 85, hiển thị vector cho từ "United
 States". Chú ý là từ "United States" trong corpus đã được biến đổi thành
 "United\_States."
 
-<a class="mk-toclify" id="87-t-nh-word-similarity"></a>
 ### 87. Tính word similarity
 
 Sử dụng word vectors thu được trong bài tập 85, tính cosine similarity cho hai
 từ "United States" và "U.S." Chú ý là từ "U.S." trong corpus được lưu trữ là
 "U.S"
 
-<a class="mk-toclify" id="88-hi-n-th-top-10-c-gi-tr-similarity-cao-nh-t"></a>
 ### 88. Hiển thị top 10 có giá trị similarity cao nhất
 
 Sử dụng word vectors trong bài 85, hiển thị top 10 từ với cosine similarity cao
 nhất với từ "England" và các giá trị cosine similarity tương ứng.
 
-<a class="mk-toclify" id="89-c-c-thao-t-c-c-ngtr-word-vectors"></a>
 ### 89. Các thao tác cộng/trừ word vectors
 
 Đọc vào các word vectors thu được trong bài 85, tính vec("Spain") -
 vec("Madrid") + vec("Athens") sau đó hiển thị top 10 từ có cosine similarity gần
 nhất với vector thu được cùng với các giá trị cosine similarity tương ứng.
 
+<a class="mk-toclify" id="ch-ng-10-kh-ng-gian-vector-ii"></a>
 ## Chương 10: Không gian vector (II)
 
 Trong chương 10, chúng ta sẽ tiếp tục nội dung của chương 9 về không gian
 vector.
 
-<a class="mk-toclify" id="90-s-d-ng-word2vec-h-c-word-vectors"></a>
 ### 90. Sử dụng word2vec để học word vectors
 
 Áp dụng [word2vec](<https://code.google.com/p/word2vec/>) trên corpus đã tạo ra
 ở bài 81 để học word vectors. Sau đó, sử dụng các word vectors đã học với
 word2vec để áp dụng cho các bài tập 86-89.
 
-<a class="mk-toclify" id="91-chu-n-b-d-li-u-analogy"></a>
 ### 91. Chuẩn bị dữ liệu analogy
 
 Download dữ liệu [analogy
@@ -1069,7 +898,6 @@ Trong dữ liệu, các dòng bắt đầu bằng ":" thể hiện tên của se
 capital-common-countries" bắt đầu cho section "capital-common-countries." Hãy
 trích xuất các dòng của section "family" trong file đã download và lưu ra file.
 
-<a class="mk-toclify" id="92-v-n-d-ng-d-li-u-analogy-data"></a>
 ### 92. Vận dụng dữ liệu analogy data
 
 Với các dòng trong dữ liệu analogy tạo ra trong bài 91, tính vector sau:
@@ -1079,13 +907,11 @@ tương tự (cosine similarity). Thêm vào cuối của các dòng từ tìm �
 tự. Trong bài tập này, hãy thử sử dụng word vector đã học được sau bài 85 và bài
 90.
 
-<a class="mk-toclify" id="93-t-nh-ch-nh-x-c-c-a-m-h-nh-tr-n-d-li-u-analogy"></a>
 ### 93. Tính độ chính xác của mô hình trên dữ liệu analogy
 
 Sử dụng dữ liệu của bài 92, tính độ chính xác của các mô hình với mô hình
 analogy.
 
-<a class="mk-toclify" id="94-t-nh-word-similarity-tr-n-d-li-u-wordsimilarity-353"></a>
 ### 94. Tính word similarity trên dữ liệu WordSimilarity-353
 
 Sử dụng đầu vào là dữ liệu [The WordSimilarity-353 Test
@@ -1093,26 +919,22 @@ Collection](<http://www.cs.technion.ac.il/~gabr/resources/data/wordsim353/>),
 tính độ tương tự của các từ ở cột 1 và cột 2 và thêm vào cuối các dòng giá trị
 độ tương tự này. Hãy áp dụng các mô hình word vectors đã học ở bài 85 và bài 90.
 
-<a class="mk-toclify" id="95-nh-gi-tr-n-d-li-u-wordsimilarity-353"></a>
 ### 95. Đánh giá trên dữ liệu WordSimilarity-353
 
 Sử dụng dữ liệu trong bài 94, sử dụng ranking với các giá trị độ tương tự đã
 tính với các mô hình và ranking do con người đưa ra để tính [Spearman
 correlation](<https://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient>).
 
-<a class="mk-toclify" id="96-tr-ch-xu-t-vectors-li-n-quan-n-t-n-n-c"></a>
 ### 96. Trích xuất vectors liên quan đến tên nước
 
 Sử dụng mô hình đã học với word2vec, trích xuất các vectors của các từ liên quan
 đến tên các nước.
 
-<a class="mk-toclify" id="97-k-means-clustering"></a>
 ### 97. k-means clustering
 
 Lấy đầu vào là các word vectors từ bài tập 96, thực hiện clustering bằng thuật
 toán k-means với số lượng clusters *k* = 5.
 
-<a class="mk-toclify" id="98-clustering-v-i-ph-ng-ph-p-ward"></a>
 ### 98. Clustering với phương pháp Ward
 
 Lấy đầu vào là các word vectors từ bài tập 96 (các word vectors của tên các
@@ -1120,12 +942,12 @@ nước), thực hiện hierarchical clustering bằng [phương pháp
 Ward](<https://en.wikipedia.org/wiki/Ward's_method>). Sau đó, visualize kết quả
 clustering bằng [dendrogram](<https://en.wikipedia.org/wiki/Dendrogram>).
 
-<a class="mk-toclify" id="99-visualize-word-vectors-b-ng-ph-ng-ph-p-t-sne"></a>
 ### 99. Visualize word vectors bằng phương pháp t-SNE
 
 Với các word vectors thu được từ bài tập 96, visualize không gian vectors bằng
 [phương pháp t-SNE](<http://www.jmlr.org/papers/v9/vandermaaten08a.html>).
 
+<a class="mk-toclify" id="ph-l-c-corpus-data-s-d-ng-trong-100-b-i-luy-n-t-p-nlp"></a>
 ## Phụ lục: Corpus, data sử dụng trong 100 bài luyện tập NLP
 
 -   [hightemp.txt](<http://www.cl.ecei.tohoku.ac.jp/nlp100/data/hightemp.txt>):
