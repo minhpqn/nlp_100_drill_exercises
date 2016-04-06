@@ -21,7 +21,7 @@ def get_path(ch, listid, sen):
     return ' -> '.join(chain)    
 
 sentences = read_chunks()
-for sen in sentences[7:9]:
+for sen in sentences:
     nn_ids = [i for i in range(len(sen)) if sen[i].has_noun()]
     paths_to_root = defaultdict(list)
     direct_path   = defaultdict(list)
