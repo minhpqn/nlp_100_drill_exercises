@@ -425,9 +425,10 @@ file neko.txt.cabocha). Câu này gồm hai động từ 始める và 見る. N
 quả phân tích cú pháp, động từ 始める liên kết với chunk ここで, động từ 見る
 liên kết với với chunk 吾輩は và ものを, chương trình sẽ in ra:
 
+```
 始める で ここで
-
 見る は を 吾輩 ものを
+```
 
 ### 47. Mining các cấu trúc câu có động từ chức năng
 
@@ -447,7 +448,9 @@ chunk được cách nhau bởi ký tự space.
 Ví dụ, cho câu sau. 「別段くるにも及ばんさと、主人は手紙に返事をする。」. Chương
 trình sẽ in ra kết quả sau.
 
+```
 返事をする と に は 及ばんさと 手紙に 主人は
+```
 
 Lưu kết quả của bài tập 47 ra file, chỉ sử dụng lệnh unix để xác nhận:
 
@@ -455,41 +458,42 @@ Lưu kết quả của bài tập 47 ra file, chỉ sử dụng lệnh unix đ�
 
 - Các vị ngữ và các case patterns
 
-### 48. Trích xuất ra dependency path từ các danh từ
+### 48. Trích xuất ra dependency path từ các danh từ đến gốc
 
-Chương trình yêu cầu trích xuất ra depedency path của tất cả các chunk có chứa
-danh từ từ các chunk đó đến root của cây depedency. Các dependency path phải
+Chương trình yêu cầu trích xuất ra depedency path từ các chunk có chứa
+danh từ đến root của cây depedency. Các dependency path phải
 thoả mãn yêu cầu sau đây.
 
 -   Biểu diễn các chunk (bunsetsu) dưới dạng chuỗi của các morpheme (surface
 form)
-
--   Biểu diễn liên kết giữa các bunsetsu bằng ký tự mũi tên (-\>).
+-   Biểu diễn liên kết giữa các bunsetsu bằng ký tự mũi tên ```->```.
 
 Ví dụ, đầu ra cho câu ví dụ 「吾輩はここで始めて人間というものを見た」(câu thứ 8
 trong file neko.txt.cabocha) như sau:
 
-吾輩は -\> 見た
-
-ここで -\> 始めて -\> 人間という -\> ものを -\> 見た
-
-人間という -\> ものを -\> 見た
-
-ものを -\> 見た
+```
+吾輩は -> 見た
+ここで -> 始めて -> 人間という -> ものを -> 見た
+人間という -> ものを -> 見た
+ものを -> 見た
+```
 
 ### 49. Trích xuất ra chuỗi liên kết giữa các danh từ
 
 Trích xuất dependency path ngắn nhất liên kết giữa các noun chunk. Đối với cặp
 noun chunk với index tương ứng là *i* và *j* (*i* \< *j*), các dependency paths
-thoả mãn các yêu cầu sau. - Giống như bài 48, biểu diễn liên kết giữa các
-bunsetsu bằng ký tự mũi tên (-\>). - Thay các noun chunk *i*, và *j* tương ứng
+thoả mãn các yêu cầu sau.
+
+- Giống như bài 48, biểu diễn liên kết giữa các
+bunsetsu bằng ký tự mũi tên (-\>).
+- Thay các noun chunk *i*, và *j* tương ứng
 thành X và Y.
 
-Thêm nữa, các dependency path trong bài tập này có thể được diễn dịch như sau. -
-Trên đường đi của noun chunk *i* tới gốc của cây, nếu tồn tại noun chunk *j*:
-trích xuất dependency path giữa noun chunk *i* và noun chunk *j*. - Ngoài trường
-hợp nói trên, nếu đường đi của noun chunk *i* và noun chunk *j* tới gốc của cây
-cắt nhau ở bunsetsu *k*: In ra đường đi từ *i* tới bunsetsu ngay trước *k* và
+Thêm nữa, các dependency path trong bài tập này có thể được diễn dịch như sau.
+
+- Trên đường đi của noun chunk *i* tới gốc của cây, nếu tồn tại noun chunk *j*:
+trích xuất dependency path giữa noun chunk *i* và noun chunk *j*.
+- Ngoài trường hợp nói trên, nếu đường đi của noun chunk *i* và noun chunk *j* tới gốc của cây cắt nhau ở bunsetsu *k*: In ra đường đi từ *i* tới bunsetsu ngay trước *k* và
 đường đi từ bunsetsu *j* tới bunsetsu ngay trước *k*. Biểu diễn liên kết với
 bunsetsu *k* bằng ký tự \|.
 
@@ -497,17 +501,14 @@ Ví dụ, kết quả đưa ra cho câu ví dụ
 「吾輩はここで始めて人間というものを見た」(câu thứ 8 trong file
 neko.txt.cabocha) như sau:
 
-Xは \| Yで -\> 始めて -\> 人間という -\> ものを \| 見た
-
-Xは \| Yという -\> ものを \| 見た
-
-Xは \| Yを \| 見た
-
-Xで -\> 始めて -\> Y
-
-Xで -\> 始めて -\> 人間という -\> Y
-
-Xという -\> Y
+```
+Xは | Yで -> 始めて -> 人間という -> ものを | 見た
+Xは | Yという -> ものを | 見た
+Xは | Yを | 見た
+Xで -> 始めて -> Y
+Xで -> 始めて -> 人間という -> Yを
+Xという -> Y
+```
 
 <a class="mk-toclify" id="ch-ng-6-x-l-v-n-b-n-ti-ng-anh"></a>
 ## Chương 6: Xử lý văn bản tiếng Anh
