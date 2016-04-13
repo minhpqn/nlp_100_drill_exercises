@@ -18,7 +18,7 @@ def get_path(ch, listid, sen):
     chain.append( ck_repr(ch, ck) )
     for i in range(1, len(listid)):
         chain.append(sen[listid[i]].surf2())
-    return ' -> '.join(chain)    
+    return ' -> '.join(chain)
 
 sentences = read_chunks()
 for sen in sentences:
