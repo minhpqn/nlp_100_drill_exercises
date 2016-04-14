@@ -497,7 +497,7 @@ Cài đặt các chương trình xử lý văn bản tiếng Anh
 
 ### 50. Tách câu (Sentence segmentation)
 
-Sử dụng patterns (. or ; or : or ? or !) -\> ký tự space -\> chữ cái tiếng Anh
+Sử dụng patterns (. or ; or : or ? or !) ```->``` ký tự space ```->``` chữ cái tiếng Anh
 viết hoa (captial letter) để tách các câu trong văn bản. Đầu vào là văn bản
 [nlp.txt](<http://www.cl.ecei.tohoku.ac.jp/nlp100/data/nlp.txt>), in ra mỗi câu
 trong văn bản trên 1 dòng.
