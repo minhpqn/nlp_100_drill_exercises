@@ -10,13 +10,6 @@ from signal import signal, SIGPIPE, SIG_DFL
 signal(SIGPIPE,SIG_DFL)
 
 def draw_dependency_tree(sen):
-    """
-    Create a directed graph
-    For each chunk in the sentence, create a node
-        Append to a list of node
-    For each chunk, create an edge from the chunk to the head
-    Draw the directed graph
-    """
     graph = pydot.Dot(graph_type='digraph')
     nodes = []
     for i,ck in enumerate(sen):
