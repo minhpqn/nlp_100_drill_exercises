@@ -556,7 +556,7 @@ trích xuất các bộ 3 [Subject, Predicate, Purpose] và in ra các bộ 3 n�
 thành phần cách nhau bởi ký tự tab). Subject, Predicate, Purpose được xác định
 dựa vào các tiêu chuẩn sau:
 
-- Predicate: Là word ở các node con (dependant) của các dependency relations: nsubj, dobj
+- Predicate: Là word ở các có các node con (dependant) trong các dependency relations: nsubj, dobj
 - Subject: Các node con (dependant) trong các quan hệ nsubj từ predicate
 - Purpose: Các node con (dependant) trong các quan hệ dobj từ predicate
 
