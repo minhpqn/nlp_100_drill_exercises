@@ -71,17 +71,23 @@ Sinh ra kết quả với các giá trị x, y, z sau đây x="12" y="Nhiệt đ
 ### 08. Xâu mật mã
 
 Từ các ký tự của một xâu cho trước, cài đặt hàm có tên cipher để mã hoá xâu như
-sau: - Nếu là ký tự tiếng Anh ở dạng thường (lower-case characters) thì chuyển
-thành ký tự có mã là (219 - mã ký tự). - Các ký tự khác giữ nguyên.
+sau:
+
+- Nếu là ký tự tiếng Anh ở dạng thường (lower-case characters) thì chuyển
+thành ký tự có mã là (219 - mã ký tự).
+- Các ký tự khác giữ nguyên.
 
 Sử dụng hàm đã viết để mã hoá và giải mã các xâu ký tự tiếng Anh.
 
 ### 09. [Typoglycemia](<https://en.wikipedia.org/wiki/Typoglycemia>)
 
 Cho đầu vào là một câu tiếng Anh bao gồm các word ngăn cách nhau bằng ký tự
-space. Viết chương trình thực hiện việc sau: - Với mỗi word, giữ nguyên ký tự
+space. Viết chương trình thực hiện việc sau:
+
+- Với mỗi word, giữ nguyên ký tự
 đầu và ký tự cuối, đảo thứ tự một cách ngẫu nhiên các ký tự còn lại của (tất
-nhiên các word có ít hơn 4 ký tự thì không cần làm gì) - Cho trước một câu tiếng
+nhiên các word có ít hơn 4 ký tự thì không cần làm gì)
+- Cho trước một câu tiếng
 Anh hợp lệ, ví dụ "I couldn't believe that I could actually understand what I
 was reading : the phenomenal power of the human mind .", chạy chương trình đã
 viết để đưa ra kết quả.
@@ -322,8 +328,12 @@ trong văn bản.
 ### 41. Đọc vào kết quả dependency parsing (theo chunks và depedency relations)
 
 Tiếp theo bài 40, cài đặt lớp Chunk để lưu trữ các chunk (hay bunsetsu (文節)).
-Lớp này có các biến thành phần là: - morphs (để lưu trữ danh sách các Morph
-objects) - dst để lưu trữ index của chunk mà chunk hiện tại trỏ đến (chunk đích - destination) - srcs để lưu trữ danh sách các indexes của các chunk trỏ đến chunk hiện tại.
+Lớp này có các biến thành phần là:
+
+- morphs (để lưu trữ danh sách các Morph
+objects)
+- dst để lưu trữ index của chunk mà chunk hiện tại trỏ đến (chunk đích - destination)
+- srcs để lưu trữ danh sách các indexes của các chunk trỏ đến chunk hiện tại.
 
 Sau đó, đọc vào kết quả dependency parsing. Mỗi câu sẽ bao gồm danh sách của các
 Chunk objects. Hiển thị xâu ký tự và giá trị của biến dst của các chunk trong câu

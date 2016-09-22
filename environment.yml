@@ -1,6 +1,6 @@
 name: nlp_100_drill_exercises
 dependencies:
+- python=2.7
 - pip
-- python
 - anaconda
 - pydot

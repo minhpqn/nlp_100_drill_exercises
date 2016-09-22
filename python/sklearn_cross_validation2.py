@@ -102,6 +102,8 @@ if __name__ == '__main__':
 	predicted = cross_validation.cross_val_predict(sen_clf, X_tfidf, y, cv=5)
 	print metrics.classification_report(y, predicted)
 
+    
+
 
 
 
