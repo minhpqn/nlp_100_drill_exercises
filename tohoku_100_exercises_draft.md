@@ -165,8 +165,11 @@ uniq, sort để thực hiện nhiệm vụ.
 
 Bài tập trong chương 3 sử dụng file
 [jawiki-country.json.gz](<http://www.cl.ecei.tohoku.ac.jp/nlp100/data/jawiki-country.json.gz>).
-File này lưu trữ các tài liệu Wikipedia và có định dạng sau đây. - Dòng thứ nhất
-lưu trữ thông tin về tài liệu dưới định dạng JSON. - Ở các dòng tiếp theo, dòng
+File này lưu trữ các tài liệu Wikipedia và có định dạng sau đây.
+
+- Dòng thứ nhất
+lưu trữ thông tin về tài liệu dưới định dạng JSON.
+- Ở các dòng tiếp theo, dòng
 tiêu đề của văn bản được lưu trữ tại khoá "title"; nội dung của tài liệu được
 lưu trữ tại khoá "text". Các dòng này được lưu trữ ở định dạng JSON.
 
